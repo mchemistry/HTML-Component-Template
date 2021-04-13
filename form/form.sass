@@ -1,0 +1,238 @@
+@keyframes benzene-slide-left
+    0%
+        transform: translateX(400px)
+    100%
+        transform: translateX(0)
+@keyframes benzene-slide-right
+    0%
+        transform: translateX(0)
+    100%
+        transform: translateX(400px)
+    
+.notification-benzene
+    position: fixed
+    top: 30%
+    right: 3rem
+    z-index: 99999
+    display: none
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff
+    min-height: 3rem
+    max-width: 18rem
+    font-weight: bold
+    font-size: 0.815rem
+    line-height: 1.25rem
+    border-radius: 0.5rem
+    padding: 0.5rem 0.25rem 0.5rem 0
+    &.slide-left
+        animation: benzene-slide-left 0.4s forwards
+    &.slide-right
+        animation: benzene-slide-right 0.4s forwards
+    i
+        margin: 0 0.375rem
+    &.error
+        border-left: 0.3rem solid #dd250dd8
+        color: #dd250dd8
+        display: flex
+        align-items: center
+        i
+            box-sizing: border-box
+            position: relative
+            display: block
+            transform: scale(var(--ggs,1))
+            width: 22px
+            height: 22px
+            border: 2px solid
+            border-radius: 40px
+            &::before, &::after
+                content: ""
+                display: block
+                box-sizing: border-box
+                position: absolute
+                width: 12px
+                height: 2px
+                background: currentColor
+                transform: rotate(45deg)
+                border-radius: 5px
+                top: 8px
+                left: 3px
+            &::after 
+                transform: rotate(-45deg)
+        
+                
+    &.success
+        border-left: 0.3rem solid #1ea11e
+        color: #1ea11e
+        display: flex
+        align-items: center
+        i
+            box-sizing: border-box
+            position: relative
+            display: block
+            width: 22px
+            height: 22px
+            border-radius: 99px
+            border: 2px solid #1ea11e 
+            &::after
+                content: ""
+                display: block
+                box-sizing: border-box
+                position: absolute
+                left: 3px
+                top: -1px
+                width: 6px
+                height: 10px
+                border-color: #1ea11e  
+                border-width: 0 2px 2px 0
+                border-style: solid
+                transform-origin: bottom left
+                transform: rotate(45deg)
+#form-benzene
+    width: 100%
+    display: flex
+    flex-direction: column
+    padding: 8px
+    background: #4e3284
+    input, textarea
+        &:focus 
+            outline: none
+        &:disabled
+            background: #2f2641b4
+            cursor: not-allowed
+        &:disabled::placeholder
+            color: #cccccc
+        &::placeholder
+            color: #cccccc
+       
+    input
+        height: 2.25rem
+        border: none
+        border-radius: 99px
+        background: #9b87c2ab
+        margin-bottom: 0
+        color: #fff
+        padding: 0 0.75rem
+        &[type='number']::-webkit-outer-spin-button, &[type=number]::-webkit-inner-spin-button
+            -webkit-appearance: none
+        &[type='number']
+            -moz-appearance: textfield
+    label
+        margin: 0.75rem 0 0.25rem 0.25rem
+        font-size: 0.875rem
+        color: white
+        &:nth-child(1)
+            margin-top: 0
+        span
+            color: #fc4545
+            font-weight: bold
+    textarea
+        height: 100px
+        border-radius: 10px
+        margin-bottom: 12px
+        border: none
+        background: #9b87c2ab
+        color: #fff
+        resize: none
+        padding: 0.5rem 0.75rem
+    span
+        color: #2dd5ff
+        font-size: 10px
+    button[type="submit"]
+        border: none
+        outline: none
+        cursor: pointer
+        height: 2.25rem
+        width: 8.75rem
+        border-radius: 99px
+        margin: 0 auto
+        margin-top: 1rem
+        background: #fd6620
+        display: flex
+        justify-content: center
+        align-items: center
+        color: white
+        transition: background 0.3s
+        &:hover
+            background: #e94a00
+        &:disabled
+            background: #2f2641b4
+            cursor: not-allowed
+        span
+            color: #fff
+            font-size: 16px
+            &[loading-spiner]
+                display: none
+            svg
+                path, rect
+                    fill: #ff5100
+                
+.form-submit-price-container
+    display: flex
+    min-width: 650px
+    min-height: 350px
+    z-index: 99
+    position: fixed
+    align-items: center
+    top: 50%
+    left: 50%
+    padding: 1rem
+    border-radius: 8px
+    background-image: linear-gradient(to right, #b9a2ef, #394e88)
+    transform: translate(-50%, -50%)
+    .close-pop-up-btn
+        width: 28px
+        height: 28px
+        background: #4e3284
+        position: absolute
+        top: -14px
+        padding: 0.2rem
+        right: -14px
+        border-radius: 999px
+        cursor: pointer
+        transition: background 0.3s
+        &:hover
+            background: #6d3ad3
+        &::before, &::after
+            position: relative
+            content: ''
+            display: inline-block
+            top: 50%
+            left: 50%
+            width: 2px
+            height: 14px
+            border-radius: 99px
+            background: #fff
+        &::before
+            transform: translate(-50%, -50%) rotate(45deg)
+        &::after
+            margin-left: -2px
+            transform:  translate(-50%, -50%) rotate(-45deg)
+    img
+        height: 300px
+        flex: 1
+        display: none
+    .price-form
+        align-items: space-around !important
+        padding: 0.25rem !important
+        background: transparent !important
+        .form-one-step
+            font-size: 1rem !important
+            color: #0a001f !important
+            text-align: center !important
+
+        label
+            font-size: 13px !important
+            margin-top: 2rem !important
+            &:nth-child(1)
+                margin-top: 0 !important
+        input
+            background: #2e2246ab !important
+        & > span
+            margin-top: 1rem !important
+            font-size: 11px !important
+            color: #f50606 !important
+        button
+            margin-top: 2.5rem !important
+            span
+                font-size: 0.75rem !important
+                
