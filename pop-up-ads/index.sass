@@ -1,0 +1,51 @@
+$primary-linear-color: #3494E6
+$secondary-linear-color: #EC6EAD
+$popup-border-radius: 8px
+$popup-close-btn-color: #fff
+$popup-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 4px
+$popup-box-shadow-popup: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px
+$default-position: fixed
+$popup-width: 640px
+$popup-height: 350px
+$close-btn-dimension: 20px
+$close-btn-color: #fff
+#auto-popup-ads-benzene
+    position: $default-position
+    width: $popup-width
+    // display: flex
+    display: none
+    height: $popup-height
+    background: linear-gradient(to right, #3494e6, #ec6ead)
+    border-radius: $popup-border-radius
+    box-shadow: $popup-box-shadow
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    .price-close-popup-btn
+        position: absolute
+        cursor: pointer
+        top: -8px
+        right: -8px
+        background: #EC6EAD
+        height: $close-btn-dimension
+        width: $close-btn-dimension
+        border-radius: 99px
+        box-shadow: $popup-box-shadow-popup
+        transition: all 0.3s
+        &:hover
+            background: rgba(#EC6EAD, 0.9)
+            transform: rotate(180deg)
+        &::after, &::before
+            position: absolute
+            width: 2px
+            display: inline-block
+            border-radius: 99px
+            content: ''
+            height: calc( 20px - 6px )
+            background: $close-btn-color
+            top: 50%
+            left: 50%  
+        &::after
+            transform: translate(-50%, -50%) rotate(45deg)         
+        &::before
+            transform: translate(-50%, -50%) rotate(-45deg)         

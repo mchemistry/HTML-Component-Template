@@ -1,0 +1,59 @@
+#auto-popup-ads-benzene {
+  position: fixed;
+  width: 640px;
+  display: none;
+  height: 350px;
+  background: -webkit-gradient(linear, left top, right top, from(#3494e6), to(#ec6ead));
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 4px;
+          box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 4px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#auto-popup-ads-benzene .price-close-popup-btn {
+  position: absolute;
+  cursor: pointer;
+  top: -8px;
+  right: -8px;
+  background: #EC6EAD;
+  height: 20px;
+  width: 20px;
+  border-radius: 99px;
+  -webkit-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+          box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#auto-popup-ads-benzene .price-close-popup-btn:hover {
+  background: rgba(236, 110, 173, 0.9);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#auto-popup-ads-benzene .price-close-popup-btn::after, #auto-popup-ads-benzene .price-close-popup-btn::before {
+  position: absolute;
+  width: 2px;
+  display: inline-block;
+  border-radius: 99px;
+  content: '';
+  height: calc( 20px - 6px);
+  background: #fff;
+  top: 50%;
+  left: 50%;
+}
+
+#auto-popup-ads-benzene .price-close-popup-btn::after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#auto-popup-ads-benzene .price-close-popup-btn::before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+/*# sourceMappingURL=index.css.map */
