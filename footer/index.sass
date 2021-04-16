@@ -1,12 +1,16 @@
+$default-text-color: #fff
+$default-border-radius: 6px
+$default-bg-footer-bottom: #fff
+	
 #footer
 	width: 100%
-	background: rgb(17, 0, 112)
+	background: rgb(27, 12, 112)
 	display: block
 	max-width: 1920px
 .inner-footer
 	width: 98%
 	margin: auto
-	padding: 30px 10px
+	padding: 20px 10px
 	display: flex
 	flex-wrap: wrap
 	box-sizing: border-box
@@ -16,7 +20,7 @@
 	width: 25%
 	padding: 10px 20px
 	box-sizing: border-box
-	color: #fff
+	color: $default-text-color
 	&__list
 		display: flex !important
 		justify-content: space-between !important
@@ -27,7 +31,7 @@
 				a
 					font-size: 12px
 					text-decoration: none
-					color: #fff
+					color: $default-text-color
 					font-weight: 600
 					&:hover
 						color: #ff5200 !important
@@ -45,10 +49,19 @@
 
 .footer-bottom
 	padding: 10px
-	background: #00121b
-	color: #fff
-	font-size: 13px
+	background: $default-bg-footer-bottom
+	color: #59585c
+	font-size: 11px
 	text-align: center
+	font-style: italic
+	font-weight: 600
+	&__DMCA
+		position: relative
+		img
+			position: absolute
+			top: -3px
+			left: 8px
+
 
 /* for tablet mode view
 
@@ -61,6 +74,21 @@
 			a
 				font-size: 13px
 
+@media screen and (max-width: 1380px)
+	.footer-items
+		&__title
+			font-size: 14px
+		.city-item__text
+			a
+				font-size: 11px !important
+
+@media screen and (max-width: 725px)
+	.footer-items
+		&__title
+			font-size: 16px !important
+		.city-item__text
+			a
+				font-size: 12px !important
 /* for mobile screen view
 
 @media screen and (max-width: 660px)
@@ -68,7 +96,7 @@
 		width: 100%
 
 //form
-#form-benzene
+// #form-benzene
 	width: 100%
 	display: flex
 	flex-direction: column
@@ -88,10 +116,10 @@
 	input
 		height: 2.25rem
 		border: none
-		border-radius: 99px
+		border-radius: $default-border-radius
 		background: #9b87c2ab
 		margin-bottom: 0
-		color: #fff
+		color: $default-text-color
 		padding: 0 0.75rem
 		&[type='number']::-webkit-outer-spin-button, &[type=number]::-webkit-inner-spin-button
 			-webkit-appearance: none
@@ -108,11 +136,11 @@
 			font-weight: bold
 	textarea
 		height: 100px
-		border-radius: 10px
+		border-radius: $default-border-radius
 		margin-bottom: 12px
 		border: none
 		background: #9b87c2ab
-		color: #fff
+		color: $default-text-color
 		resize: none
 		padding: 0.5rem 0.75rem
 	span
@@ -124,7 +152,7 @@
 		cursor: pointer
 		height: 2.25rem
 		width: 9rem
-		border-radius: 99px
+		border-radius: $default-border-radius
 		margin: 0 auto
 		margin-top: 1rem
 		background: #fd6620
@@ -139,26 +167,10 @@
 			background: #2f2641b4
 			cursor: not-allowed
 		span
-			color: #fff
+			color: $default-text-color
 			font-size: 16px
 			&[loading-spiner]
 				display: none
 			svg
 				path, rect
 					fill: #ff5100
-
-@media screen and (max-width: 1380px)
-	.footer-items
-		&__title
-			font-size: 14px
-		.city-item__text
-			a
-				font-size: 11px !important
-
-@media screen and (max-width: 725px)
-	.footer-items
-		&__title
-			font-size: 16px !important
-		.city-item__text
-			a
-				font-size: 12px !important

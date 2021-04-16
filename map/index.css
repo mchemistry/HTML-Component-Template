@@ -1,0 +1,164 @@
+.map-title {
+  color: #4e3284;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.address-group-shortened {
+  overflow: hidden;
+}
+
+.contact__address {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__address i {
+  margin-right: 8px;
+}
+
+.contact__address a {
+  margin-left: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: #D50000;
+  padding: 2px 8px;
+  border-radius: 99px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.contact__address a:hover {
+  background: rgba(213, 0, 0, 0.8);
+}
+
+.more-maps {
+  position: relative;
+  top: 16px;
+  left: 4px;
+  outline: none;
+  border: none;
+  background: #D50000;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.more-maps:hover {
+  background: rgba(213, 0, 0, 0.8);
+}
+
+#maps {
+  background: #3f3f3f4b;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#maps .map-wrapper {
+  bottom: 10px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem 0.25rem;
+}
+
+#maps .map-wrapper .all-map {
+  padding: 0 0.75rem;
+  height: calc( 100vh - 120px);
+  margin-bottom: 120px;
+  overflow: auto !important;
+}
+
+#maps .map-wrapper .all-map::-webkit-scrollbar {
+  background-color: #fff;
+  width: 12px;
+}
+
+#maps .map-wrapper .all-map::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+#maps .map-wrapper .all-map::-webkit-scrollbar-track:hover {
+  background-color: #f4f4f4;
+}
+
+#maps .map-wrapper .all-map::-webkit-scrollbar-thumb {
+  background-color: #c0bbca;
+  border-radius: 12px;
+  border: 5px solid #fff;
+}
+
+#maps .map-wrapper .all-map::-webkit-scrollbar-thumb:hover {
+  background-color: #4f4563;
+  border: 3px solid #f4f4f4;
+}
+
+.close-popup-map-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 4px;
+  right: 4px;
+  background: #D50000;
+  height: 24px;
+  width: 24px;
+  border-radius: 99px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.close-popup-map-btn:hover {
+  background: rgba(213, 0, 0, 0.9);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.close-popup-map-btn::after, .close-popup-map-btn::before {
+  position: absolute;
+  width: 2px;
+  display: inline-block;
+  border-radius: 99px;
+  content: '';
+  height: calc( 20px - 6px);
+  background: #fff;
+  top: 50%;
+  left: 50%;
+}
+
+.close-popup-map-btn::after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-popup-map-btn::before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .map-wrapper {
+    width: 96% !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
