@@ -1,0 +1,37 @@
+$default-info-color: #4CA3DF
+$default-warning-color: #EA8B3F
+$default-danger-color: #EA5F51
+$default-success-color: #4DD181
+$quotes-background: #f7fbff
+$default-border-width: 2px
+$quotes-text-color:  #3e3f41  
+$quotes-border-radius: 2px 
+blockquote
+    margin-top: 20px
+    border-top: $default-border-width solid $default-info-color
+    border-bottom: $default-border-width solid $default-info-color
+    padding: 8px
+    background: $quotes-background
+    position: relative
+    border-radius: $quotes-border-radius
+    &::before
+        content: open-quote
+        display: inline-block
+        position: absolute
+        left: 50%
+        top: -50%
+        margin-top: 8px
+        bottom: 90px
+        background: red
+        transform: translate(-50%)
+        font-weight: bold
+        font-size: 4rem
+        color: $default-info-color
+        z-index: 1
+    p
+        z-index: 1
+        padding: 0
+        margin-left: 4px
+        font-size: 14px
+        font-style: italic
+        color: #5a5a5a
