@@ -21,8 +21,7 @@ const DEFAULT_KEY_OF_COOKIE_POPUP_SUFFIXES = 'ads-benzene'; // set default cooki
 
         if(typeof _self.checkCookieIsExpired() === 'undefined' && _self.popupAdsContainer.is(':hidden')) {
             setTimeout(() =>{
-                console.log('ok')
-                self.popupAdsContainer.css('display', 'flex');
+                _self.popupAdsContainer.css('display', 'flex');
             }, DEFAULT_TIME_TO_SHOW_POPUP)
         }
         
