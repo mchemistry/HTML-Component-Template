@@ -1,10 +1,15 @@
+$fb-bg-color: #38529A
+$zalo-bg-color: #0094F8
+$default-text-color: #fff
+$default-border-radius: 4px
+
 .icon-facebook
     box-sizing: border-box
     position: relative
     display: block
     transform: scale(var(--icons,1))
-    width: 20px
-    height: 20px
+    width: 16px
+    height: 16px
 
 .icon-facebook::after,
 .icon-facebook::before
@@ -16,15 +21,43 @@
 .icon-facebook::before
     width: 8px
     height: 20px
-    border-left: 4px solid
-    border-top: 4px solid
+    border-left: 4px solid $default-text-color
+    border-top: 4px solid $default-text-color
     border-top-left-radius: 5px
-    left: 6px
+    left: 0
+    top: -2px
 
 .icon-facebook::after
     width: 10px
     height: 4px
-    background: currentColor
-    top: 7px
-    left: 4px
+    background: $default-text-color
+    top: 5px
+    left: -2px
     transform: skew(-5deg)
+
+#share-socials-container
+    display: flex
+    justify-content: center
+    align-items: center
+    .share-socials
+        height: 28px
+        cursor: pointer
+        font-size: 13px
+        align-items: center
+        display: flex
+        justify-content: space-between
+        padding: 1px 8px
+        color: $default-text-color
+        border-radius: $default-border-radius
+        &:not(:nth-child(1))
+            margin-left: 8px
+        &.share-facebook
+            background: $fb-bg-color
+        &.share-zalo
+            padding: 1px 8px 1px 2px
+            background: $zalo-bg-color
+            .icon-zalo
+                background-image: url('./zalo-icon-o.png')
+                width: 24px
+                height: 24px
+                margin-right: 4px

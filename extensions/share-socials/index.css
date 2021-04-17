@@ -5,8 +5,8 @@
   display: block;
   -webkit-transform: scale(var(--icons, 1));
           transform: scale(var(--icons, 1));
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .icon-facebook::after,
@@ -21,19 +21,70 @@
 .icon-facebook::before {
   width: 8px;
   height: 20px;
-  border-left: 4px solid;
-  border-top: 4px solid;
+  border-left: 4px solid #fff;
+  border-top: 4px solid #fff;
   border-top-left-radius: 5px;
-  left: 6px;
+  left: 0;
+  top: -2px;
 }
 
 .icon-facebook::after {
   width: 10px;
   height: 4px;
-  background: currentColor;
-  top: 7px;
-  left: 4px;
+  background: #fff;
+  top: 5px;
+  left: -2px;
   -webkit-transform: skew(-5deg);
           transform: skew(-5deg);
+}
+
+#share-socials-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#share-socials-container .share-socials {
+  height: 28px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1px 8px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#share-socials-container .share-socials:not(:nth-child(1)) {
+  margin-left: 8px;
+}
+
+#share-socials-container .share-socials.share-facebook {
+  background: #38529A;
+}
+
+#share-socials-container .share-socials.share-zalo {
+  padding: 1px 8px 1px 2px;
+  background: #0094F8;
+}
+
+#share-socials-container .share-socials.share-zalo .icon-zalo {
+  background-image: url("./zalo-icon-o.png");
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
 }
 /*# sourceMappingURL=index.css.map */
