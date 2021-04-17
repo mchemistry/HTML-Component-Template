@@ -1,7 +1,7 @@
 $fb-bg-color: #38529A
 $zalo-bg-color: #0094F8
 $default-text-color: #fff
-$default-border-radius: 4px
+$default-border-radius: 3px
 
 .icon-facebook
     box-sizing: border-box
@@ -43,6 +43,7 @@ $default-border-radius: 4px
         height: 28px
         cursor: pointer
         font-size: 13px
+        font-weight: 600
         align-items: center
         display: flex
         justify-content: space-between
@@ -51,6 +52,8 @@ $default-border-radius: 4px
         border-radius: $default-border-radius
         &:not(:nth-child(1))
             margin-left: 8px
+            span:nth-child(2)
+                margin-left: 4px
         &.share-facebook
             background: $fb-bg-color
         &.share-zalo
@@ -60,4 +63,3 @@ $default-border-radius: 4px
                 background-image: url('./zalo-icon-o.png')
                 width: 24px
                 height: 24px
-                margin-right: 4px
