@@ -5,33 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-   <style>
-       * {
-           margin: 0;
-           padding: 0;
-           font-family: 'Nunito Sans', sans-serif;
-       }
-   </style>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito Sans", sans-serif;
+      }
+    </style>
   </head>
+
   <body>
     <div id="share-socials-container">
-      <div class="share-socials share-facebook"><span><i class="icon-facebook"></i></span><span class="text">Chia sẻ</span></div>
+      <div class="share-socials share-facebook">
+        <span><i class="icon-facebook"></i></span
+        ><span class="text">Chia sẻ</span>
+      </div>
       <div
-        class="share-socials share-zalo  zalo-share-button"
+        class="share-socials share-zalo zalo-share-button"
         data-href=""
         data-oaid="579745863508352884"
         data-layout="1"
         data-color="blue"
         data-customize="true"
-      ><span class="icon-zalo"></span><span class="text">Chia sẻ</span></div>
-      <div class="share-socials share-more"><span></span>Nhiều hơn</div>
+      >
+        <span class="zalo">Zalo</span><span class="text">Chia sẻ</span>
+      </div>
+      <div class="share-socials share-more">
+        <span> <i class="more-share"></i> </span><span>Nhiều hơn</span>
+      </div>
     </div>
     <script src="https://sp.zalo.me/plugins/sdk.js"></script>
   </body>

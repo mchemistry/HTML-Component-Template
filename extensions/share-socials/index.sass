@@ -1,7 +1,9 @@
 $fb-bg-color: #38529A
 $zalo-bg-color: #0094F8
-$default-text-color: #fff
-$default-border-radius: 3px
+$share-more-bg-color: #4e3284
+$default-socials-text-color: #fff
+$default-socials-border-radius: 3px
+
 
 .icon-facebook
     box-sizing: border-box
@@ -21,8 +23,8 @@ $default-border-radius: 3px
 .icon-facebook::before
     width: 8px
     height: 20px
-    border-left: 4px solid $default-text-color
-    border-top: 4px solid $default-text-color
+    border-left: 4px solid $default-socials-text-color
+    border-top: 4px solid $default-socials-text-color
     border-top-left-radius: 5px
     left: 0
     top: -2px
@@ -30,26 +32,60 @@ $default-border-radius: 3px
 .icon-facebook::after
     width: 10px
     height: 4px
-    background: $default-text-color
+    background: $default-socials-text-color
     top: 5px
     left: -2px
     transform: skew(-5deg)
+
+.more-share
+    box-sizing: border-box
+    position: relative
+    display: block
+    transform: scale(var(--mores,1))
+    width: 6px
+    height: 6px
+    background: $default-socials-text-color
+    border-radius: 100px
+    box-shadow: 10px -6px 0, 10px 6px 0
+
+.more-share::after,.more-share::before
+    content: ""
+    display: block
+    box-sizing: border-box
+    position: absolute
+    border-radius: 3px
+    width: 10px
+    height: 2px
+    background: $default-socials-text-color
+    left: 2px
+
+.more-share::before
+    top: 0
+    transform: rotate(-35deg)
+
+.more-share::after
+    bottom: 0
+    transform: rotate(35deg)
+
+
 
 #share-socials-container
     display: flex
     justify-content: center
     align-items: center
+    margin: 8px 0
     .share-socials
-        height: 28px
+        height: 32px
         cursor: pointer
         font-size: 13px
         font-weight: 600
         align-items: center
         display: flex
         justify-content: space-between
-        padding: 1px 8px
-        color: $default-text-color
-        border-radius: $default-border-radius
+        padding: 3px 8px 3px 10px
+        color: $default-socials-text-color
+        border-radius: $default-socials-border-radius
+        transition: background 0.3s
         &:not(:nth-child(1))
             margin-left: 8px
             span:nth-child(2)
@@ -57,9 +93,19 @@ $default-border-radius: 3px
         &.share-facebook
             background: $fb-bg-color
         &.share-zalo
-            padding: 1px 8px 1px 2px
+            padding: 1px 8px 1px 4px
             background: $zalo-bg-color
-            .icon-zalo
-                background-image: url('./zalo-icon-o.png')
-                width: 24px
+            .zalo
+                font-weight: 800
+                font-size: 10px
                 height: 24px
+                padding-left: 2px
+                padding-right: 2px
+                border-radius: 99px
+                padding-top: 5px
+                background: $default-socials-text-color
+                color: $zalo-bg-color
+        &.share-more
+            background-color: $share-more-bg-color
+            span:nth-child(2)
+                margin-left: 18px
