@@ -1,0 +1,145 @@
+$primary: #5d3284
+$secondary: #ff5200
+$info: #2D4CC9
+$success: #18634E
+$danger: #AA1E2C
+$warning: #FA7D08
+$link: #3262C0
+$white: #fff
+$default-info-box-radius: 4px
+
+.notes-icon
+    box-sizing: border-box
+    position: absolute
+    display: block
+    transform: scale(var(--ggs,1))
+    width: 26px
+    height: 28px
+    border: 2px solid $info
+    border-radius: 3px
+    &::after, &::before
+        content: ""
+        display: block
+        box-sizing: border-box
+        position: absolute
+        border-radius: 3px
+        height: 2px
+        background: $info
+        left: 2px
+    &::before
+        box-shadow: 0 4px 0 $info, 0 8px 0 $info
+        width: 16px
+        top: 4px
+
+    &::after
+        width: 12px
+        top: 16px
+
+
+.danger-icon
+    box-sizing: border-box
+    position: absolute
+    display: block
+    transform: scale(var(--ggs,1))
+    width: 26px
+    height: 26px
+    border: 2px solid $danger
+    border-radius: 40px
+    &::after,&::before
+        content: ""
+        display: block
+        box-sizing: border-box
+        position: absolute
+        border-radius: 99px
+        width: 3px
+        background: $danger
+        left: 9px
+    &::after
+        top: 2px
+        height: 12px
+    &::before
+        height: 3px
+        bottom: 3px
+
+.info-icon
+    box-sizing: border-box
+    position: absolute
+    display: block
+    transform: translateX(180deg)
+    width: 26px
+    height: 26px
+    border: 2px solid $info
+    border-radius: 40px
+    &::after,&::before
+        content: ""
+        display: block
+        box-sizing: border-box
+        position: absolute
+        border-radius: 99px
+        width: 3px
+        background: $info
+        left: 9px
+    &::before
+        bottom: 3px
+        height: 12px
+    &::after
+        height: 3px
+        top: 2px
+
+.note-box
+    padding: 4px 4px 16px 54px
+    border-radius: $default-info-box-radius
+    position: relative
+    width: 100%
+    &::after
+        content: ''
+        display: inline-block
+        position: absolute
+        height: 8px
+        width: 50%
+        bottom: 0
+        right: 0
+        border-bottom-right-radius: 4px
+    ul
+        list-style-position: inside
+        li:not(:nth-child(1))
+            margin-top: 10px
+        li:nth-child(1)
+            margin-top: 4px
+    &__title
+        font-size: 14px
+        font-weight: bold
+        text-transform: uppercase
+    span
+        position: relative
+    &__info
+        border: 1px solid $info
+        background: rgba($info, 0.03)
+        &::after
+            background-color: $info
+        .note-box__title
+            color: $info
+    &__success
+        border: 1px solid $success
+        background: rgba($success, 0.03)
+        &::after
+            background-color: $success
+        .note-box__title
+            color: $success
+    &__warning
+        border: 1px solid $warning
+        background: rgba($warning, 0.03)
+        &::after
+            background-color: $warning
+        .note-box__title
+            color: $warning
+    &__danger
+        border: 1px solid $danger
+        background: rgba($danger, 0.03)
+        &::after
+            background-color: $danger
+        .note-box__title
+            color: $danger
+.fixed-icon
+    top: 12px
+    left: -40px
