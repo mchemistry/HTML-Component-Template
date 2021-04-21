@@ -1,24 +1,9 @@
-#change-info__pricing-table {
-  max-width: 98%;
-  margin: 30px auto;
-  padding: 0 20px;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  /* Define Auto Row size */
-  grid-auto-rows: auto;
-  /*Define our columns */
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
-}
-
-#change-info__pricing-table .price-table-item {
-  max-width: 330px;
+.price-table-item {
+  width: 300px;
   height: 350px;
   border-radius: 8px;
   border: 1px solid #d0c6e4;
-  margin-bottom: 16px;
+  margin: 40px;
   position: relative;
   padding: 8px 12px;
   -webkit-box-sizing: border-box;
@@ -28,12 +13,12 @@
   transition: all 0.3s;
 }
 
-#change-info__pricing-table .price-table-item:hover {
+.price-table-item:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-#change-info__pricing-table .price-table-item::after {
+.price-table-item::after {
   position: absolute;
   content: '';
   display: inline-block;
@@ -49,7 +34,7 @@
   border-radius: 999px;
 }
 
-#change-info__pricing-table .price-table-item__title {
+.price-table-item__title {
   text-align: center;
   margin-top: 16px;
   text-transform: uppercase;
@@ -57,7 +42,7 @@
   color: #fff;
 }
 
-#change-info__pricing-table .price-table-item__price {
+.price-table-item__price {
   text-align: center;
   margin-top: 12px;
   text-transform: uppercase;
@@ -65,12 +50,12 @@
   color: #fff;
 }
 
-#change-info__pricing-table .price-table-item__details {
+.price-table-item__details {
   margin-top: 40px;
   list-style: none;
 }
 
-#change-info__pricing-table .price-table-item__details li {
+.price-table-item__details li {
   color: #332f3b;
   font-weight: 600;
   display: -webkit-box;
@@ -83,7 +68,7 @@
   margin-top: 16px;
 }
 
-#change-info__pricing-table .price-table-item__button {
+.price-table-item__button {
   position: absolute;
   bottom: 16px;
   left: 50%;
@@ -103,33 +88,13 @@
   transition: all 0.3s;
 }
 
-#change-info__pricing-table .price-table-item__button:focus {
+.price-table-item__button:focus {
   outline: none;
 }
 
-#change-info__pricing-table .price-table-item__button:hover {
+.price-table-item__button:hover {
   -webkit-box-shadow: rgba(214, 3, 3, 0.3) 0px 0px 0px 3px;
           box-shadow: rgba(214, 3, 3, 0.3) 0px 0px 0px 3px;
   background-position: to left;
-}
-
-@media screen and (max-width: 990px) {
-  .pricing-table__item {
-    margin: 0 0 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #change-info__pricing-table {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #change-info__pricing-table {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
 }
 /*# sourceMappingURL=index.css.map */

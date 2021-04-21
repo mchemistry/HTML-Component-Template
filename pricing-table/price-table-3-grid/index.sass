@@ -1,3 +1,9 @@
+$pricing-item-m-width: 330px
+$pricing-item-title-color: #fff
+$pricing-item-price-color: #fff
+$price-item-default-boxshadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+$price-item-button-bg: linear-gradient(to right, #642b73, #c6426e)
+$price-item-border-radius: 8px
 #change-info__pricing-table
     max-width: 98%
     margin: 30px auto
@@ -9,110 +15,74 @@
     /*Define our columns */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
     grid-gap: 1em
-    .pricing-table__item
-        text-align: center
-        background: #fff
-        margin: 0 -15px
-        box-shadow: 0 0 10px #ababab
-        padding-bottom: 40px
-        border-radius: 10px
-        color: #cad0de
-        transform: scale(1)
-        transition: all 0.5s ease 0s
-
+    .price-table-item
+        max-width: $pricing-item-m-width
+        height: 350px
+        border-radius: $price-item-border-radius
+        // background: #f85
+        border: 1px solid #d0c6e4
+        margin-bottom: 16px
+        position: relative
+        padding: 8px 12px
+        box-sizing: border-box
+        overflow: hidden
+        transition: all 0.3s
         &:hover
-            transform: scale(1.05)
-            z-index: 1
-
-        .pricing-table__item-header
-            padding: 40px 0
-            background: #f5f6f9
-            border-radius: 10px 10px 50% 50%
-            transition: all 0.5s ease 0s
-
-        &:hover 
-            .pricing-table__item-header
-                background: #ff9624
-
-        .pricing-table__item-header i
-            font-size: 50px
-            color: #858c9a
-            margin-bottom: 10px
-            transition: all 0.5s ease 0s
-
-        .price-value
-            font-size: 35px
-            color: #ff9624
-            transition: all 0.5s ease 0s
-
-        .month
-            display: block
-            font-size: 14px
-            color: #cad0de
-
-        &:hover
-            .month, .price-value, .pricing-table__item-header i
-            color: #fff
-
-        .heading
-            font-size: 24px
-            color: #ff9624
-            margin-bottom: 20px
-            text-transform: uppercase
-
-        .pricing-content ul
-            list-style: none
-            padding: 0
-            margin-bottom: 30px
-            li
-                line-height: 30px
-                color: #a7a8aa
-
-        .pricing-table__item-signup a
+            box-shadow: $price-item-default-boxshadow
+        &::after
+            position: absolute
+            content: ''
             display: inline-block
-            font-size: 15px
-            color: #fff
-            padding: 10px 35px
-            border-radius: 20px
-            background: #ffa442
+            height: 400px
+            width: 400px
+            top: -270px
+            z-index: -1
+            left: 50%
+            transform: translateX(-50%)
+            background: linear-gradient(to right, #fc00ff, #00dbde)
+            border-radius: 999px
+        &__title
+            text-align: center
+            margin-top: 16px
             text-transform: uppercase
-            transition: all 0.3s ease 0s
-
-            &:hover
-            box-shadow: 0 0 10px #ffa442
-
-        &.blue
-            .heading, .price-value
-            color: #4b64ff
-
-            .pricing-table__item-signup a, &:hover .pricing-table__item-header
-            background: #4b64ff
-
-            .pricing-table__item-signup a:hover
-            box-shadow: 0 0 10px #4b64ff
-
-        &.red
-            .heading, .price-value
-            color: #ff4b4b
-
-            .pricing-table__item-signup a, &:hover .pricing-table__item-header
-            background: #ff4b4b
-
-            .pricing-table__item-signup a:hover
-            box-shadow: 0 0 10px #ff4b4b
-
-        &.green
-            .heading, .price-value
-            color: #40c952
-
-            .pricing-table__item-signup a, &:hover .pricing-table__item-header
-            background: #40c952
-
-            .pricing-table__item-signup a:hover
-            box-shadow: 0 0 10px #40c952
-
-        &.blue:hover .price-value, &.green:hover .price-value, &.red:hover .price-value
+            font-size: 18px
+            color: $pricing-item-title-color
+        &__price
+            text-align: center
+            margin-top: 12px
+            text-transform: uppercase
+            font-size: 28px
+            color: $pricing-item-price-color
+        &__details
+            margin-top: 40px
+            list-style: none
+            li
+                color: #332f3b
+                font-weight: 600
+                display: flex
+                justify-content: space-between
+                font-size: 12px
+                margin-top: 16px
+        &__button
+            position: absolute
+            bottom: 16px
+            left: 50%
+            transform: translateX(-50%)
+            height: 46px
+            width: 60%
+            border-radius: 8px
+            outline: none
+            border: none
+            font-size: 14px
             color: #fff
+            cursor: pointer
+            background: $price-item-button-bg
+            transition: all 0.3s
+            &:focus
+                outline: none
+            &:hover
+                box-shadow: rgba(214, 3, 3, 0.3) 0px 0px 0px 3px
+                background-position: to left
 
 @media screen and (max-width: 990px)
   .pricing-table__item
