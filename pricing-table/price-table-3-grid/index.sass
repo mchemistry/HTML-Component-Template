@@ -1,0 +1,132 @@
+#change-info__pricing-table
+    max-width: 98%
+    margin: 30px auto
+    padding: 0 20px
+    width: 100%
+    display: grid
+    /* Define Auto Row size */
+    grid-auto-rows: auto
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+    grid-gap: 1em
+    .pricing-table__item
+        text-align: center
+        background: #fff
+        margin: 0 -15px
+        box-shadow: 0 0 10px #ababab
+        padding-bottom: 40px
+        border-radius: 10px
+        color: #cad0de
+        transform: scale(1)
+        transition: all 0.5s ease 0s
+
+        &:hover
+            transform: scale(1.05)
+            z-index: 1
+
+        .pricing-table__item-header
+            padding: 40px 0
+            background: #f5f6f9
+            border-radius: 10px 10px 50% 50%
+            transition: all 0.5s ease 0s
+
+        &:hover 
+            .pricing-table__item-header
+                background: #ff9624
+
+        .pricing-table__item-header i
+            font-size: 50px
+            color: #858c9a
+            margin-bottom: 10px
+            transition: all 0.5s ease 0s
+
+        .price-value
+            font-size: 35px
+            color: #ff9624
+            transition: all 0.5s ease 0s
+
+        .month
+            display: block
+            font-size: 14px
+            color: #cad0de
+
+        &:hover
+            .month, .price-value, .pricing-table__item-header i
+            color: #fff
+
+        .heading
+            font-size: 24px
+            color: #ff9624
+            margin-bottom: 20px
+            text-transform: uppercase
+
+        .pricing-content ul
+            list-style: none
+            padding: 0
+            margin-bottom: 30px
+            li
+                line-height: 30px
+                color: #a7a8aa
+
+        .pricing-table__item-signup a
+            display: inline-block
+            font-size: 15px
+            color: #fff
+            padding: 10px 35px
+            border-radius: 20px
+            background: #ffa442
+            text-transform: uppercase
+            transition: all 0.3s ease 0s
+
+            &:hover
+            box-shadow: 0 0 10px #ffa442
+
+        &.blue
+            .heading, .price-value
+            color: #4b64ff
+
+            .pricing-table__item-signup a, &:hover .pricing-table__item-header
+            background: #4b64ff
+
+            .pricing-table__item-signup a:hover
+            box-shadow: 0 0 10px #4b64ff
+
+        &.red
+            .heading, .price-value
+            color: #ff4b4b
+
+            .pricing-table__item-signup a, &:hover .pricing-table__item-header
+            background: #ff4b4b
+
+            .pricing-table__item-signup a:hover
+            box-shadow: 0 0 10px #ff4b4b
+
+        &.green
+            .heading, .price-value
+            color: #40c952
+
+            .pricing-table__item-signup a, &:hover .pricing-table__item-header
+            background: #40c952
+
+            .pricing-table__item-signup a:hover
+            box-shadow: 0 0 10px #40c952
+
+        &.blue:hover .price-value, &.green:hover .price-value, &.red:hover .price-value
+            color: #fff
+
+@media screen and (max-width: 990px)
+  .pricing-table__item
+    margin: 0 0 20px
+        
+        
+                   
+@media screen and (max-width:768px)
+   #change-info__pricing-table
+        grid-template-columns: repeat(2,1fr)
+   
+
+
+@media screen and (max-width:600px)
+   #change-info__pricing-table
+        grid-template-columns: 1fr
+   
