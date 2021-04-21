@@ -133,6 +133,7 @@
   font-weight: 800;
   font-size: 10px;
   height: 24px;
+  position: relative;
   padding-left: 2px;
   padding-right: 2px;
   border-radius: 99px;
@@ -141,11 +142,32 @@
   color: #0094F8;
 }
 
+#share-socials-container .share-socials.share-zalo .zalo::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  background: #fff;
+  height: 6px;
+  width: 6px;
+  bottom: 2px;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+
 #share-socials-container .share-socials.share-more {
+  display: none;
   background-color: #4e3284;
 }
 
 #share-socials-container .share-socials.share-more span:nth-child(2) {
   margin-left: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .share-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=index.css.map */
