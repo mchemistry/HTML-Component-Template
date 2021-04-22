@@ -51,13 +51,15 @@
 
 #change-info__pricing-table .price-table-item__title {
   text-align: center;
+  height: 40px;
   margin-top: 16px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
 }
 
 #change-info__pricing-table .price-table-item__price {
+  height: 40px;
   text-align: center;
   margin-top: 12px;
   text-transform: uppercase;
@@ -71,7 +73,7 @@
 }
 
 #change-info__pricing-table .price-table-item__details li {
-  color: #332f3b;
+  color: #0e0674;
   font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,8 +81,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 16px;
+  font-weight: bold;
 }
 
 #change-info__pricing-table .price-table-item__button {
@@ -131,5 +134,17 @@
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+}
+
+#change-info__pricing-table .price-table-item:nth-child(n+5) ul li {
+  margin-top: 60px;
+}
+
+#change-info__pricing-table .price-table-item:nth-child(4) ul li {
+  margin-top: 28px;
+}
+
+#change-info__pricing-table .price-table-item:nth-child(1) ul li {
+  margin-top: 60px;
 }
 /*# sourceMappingURL=index.css.map */
