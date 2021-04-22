@@ -147,11 +147,13 @@
 
 .note-box__info {
   border: 1px solid #2D4CC9;
-  background: rgba(45, 76, 201, 0.03);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(45, 76, 201, 0.03)), to(rgba(45, 76, 201, 0.15)));
+  background-image: linear-gradient(to right, rgba(45, 76, 201, 0.03), rgba(45, 76, 201, 0.15));
 }
 
 .note-box__info::after {
-  background-color: #2D4CC9;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(45, 76, 201, 0.1)), to(rgba(45, 76, 201, 0.9)));
+  background-image: linear-gradient(to right, rgba(45, 76, 201, 0.1), rgba(45, 76, 201, 0.9));
 }
 
 .note-box__info .note-box__title {
@@ -160,11 +162,13 @@
 
 .note-box__success {
   border: 1px solid #18634E;
-  background: rgba(24, 99, 78, 0.03);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(24, 99, 78, 0.03)), to(rgba(24, 99, 78, 0.15)));
+  background: linear-gradient(to right, rgba(24, 99, 78, 0.03), rgba(24, 99, 78, 0.15));
 }
 
 .note-box__success::after {
-  background-color: #18634E;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(24, 99, 78, 0.3)), to(#18634e));
+  background: linear-gradient(to right, rgba(24, 99, 78, 0.3), #18634e);
 }
 
 .note-box__success .note-box__title {
@@ -173,11 +177,13 @@
 
 .note-box__warning {
   border: 1px solid #FA7D08;
-  background: rgba(250, 125, 8, 0.03);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(250, 125, 8, 0.03)), to(rgba(250, 125, 8, 0.15)));
+  background: linear-gradient(to right, rgba(250, 125, 8, 0.03), rgba(250, 125, 8, 0.15));
 }
 
 .note-box__warning::after {
-  background-color: #FA7D08;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(250, 125, 8, 0.03)), to(#fa7d08));
+  background: linear-gradient(to right, rgba(250, 125, 8, 0.03), #fa7d08);
 }
 
 .note-box__warning .note-box__title {
@@ -185,12 +191,13 @@
 }
 
 .note-box__danger {
-  border: 1px solid #AA1E2C;
-  background: rgba(170, 30, 44, 0.03);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(170, 30, 44, 0.03)), to(rgba(170, 30, 44, 0.15)));
+  background: linear-gradient(to right, rgba(170, 30, 44, 0.03), rgba(170, 30, 44, 0.15));
 }
 
 .note-box__danger::after {
-  background-color: #AA1E2C;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(170, 30, 44, 0.03)), to(#aa1e2c));
+  background: linear-gradient(to right, rgba(170, 30, 44, 0.03), #aa1e2c);
 }
 
 .note-box__danger .note-box__title {

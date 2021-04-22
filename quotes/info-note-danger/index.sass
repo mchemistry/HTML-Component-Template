@@ -114,30 +114,30 @@ $default-info-box-radius: 4px
         position: relative
     &__info
         border: 1px solid $info
-        background: rgba($info, 0.03)
+        background-image: linear-gradient(to right, rgba($info, 0.03), rgba($info, 0.15))
         &::after
-            background-color: $info
+            background-image: linear-gradient(to right, rgba($info, 0.1), rgba($info, 0.9))
         .note-box__title
             color: $info
     &__success
         border: 1px solid $success
-        background: rgba($success, 0.03)
+        background: linear-gradient(to right, rgba($success, 0.03), rgba($success, 0.15))
         &::after
-            background-color: $success
+            background: linear-gradient(to right, rgba($success, 0.3), rgba($success, 1))
         .note-box__title
             color: $success
     &__warning
         border: 1px solid $warning
-        background: rgba($warning, 0.03)
+        background: linear-gradient(to right, rgba($warning, 0.03), rgba($warning, 0.15))
         &::after
-            background-color: $warning
+            background: linear-gradient(to right, rgba($warning, 0.03), rgba($warning, 1))
         .note-box__title
             color: $warning
     &__danger
-        border: 1px solid $danger
-        background: rgba($danger, 0.03)
+        // border: 1px solid $danger
+        background: linear-gradient(to right, rgba($danger, 0.03), rgba($danger, 0.15))
         &::after
-            background-color: $danger
+            background: linear-gradient(to right, rgba($danger, 0.03), rgba($danger, 1))
         .note-box__title
             color: $danger
 .fixed-icon
