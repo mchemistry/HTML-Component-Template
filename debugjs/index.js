@@ -1,0 +1,12 @@
+console.log('ok1');
+debugger;
+console.log('ok2');
+debugger;
+console.log('ok3');
+debugger;
+console.log('ok4');
+debugger;
+console.log('ok5');
+debugger;
+console.log('ok6');
+debugger;
