@@ -20,8 +20,41 @@
 </head>
 <body>
     <div class="price-popup-ads" id="auto-popup-ads-benzene">
-        <span class="price-close-popup-btn">
-        </span>
+        <i class="price-close-popup-btn"></i>
+        <div class="img-wrapper">
+            <img src="./dog.png" alt="condog" height="100%">
+        </div>
+        <div class="form-wrapper">
+            <form class="pop-up-form" id="form-benzene">
+                <p class="form-one-step">Còn 1 bước nữa, bạn vui lòng để lại thông tin cho FADI liên hệ nhé!</p>
+                <label class="label" for="fullname">Họ Tên </label>
+                <input type="text" placeholder="Nhập vào họ tên của bạn" id="pop-up-fullname" required />
+                <!-- <label for="email" required>Email</label>
+                  <input type="email" placeholder="Nhập vào email của bạn" required> -->
+                <label for="phone" >Số điện thoại </label>
+                <input type="number" name="phone" id="pop-up-phone" placeholder="Nhập vào số điện thoại..." required/>
+                <!-- <label for="subject">Nội dung yêu cầu </label> -->
+                <!-- <textarea type="text" name="subject" id="pop-up-subject" rows="4" cols="30" required placeholder="Nhập vào nội dung hỗ trợ ..."></textarea> -->
+                <button type="submit" id="pop-up-btn-submit">
+                  <span id="pop-up-text-btn">Gửi yêu cầu</span>
+                  <span id="pop-up-loading" loading-spiner>
+                    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="28px" height="28px" fill=#fff viewBox="0 0 40 40" enable-background="new 0 0 40 40"
+                      xml:space="preserve">
+                      <path opacity="0.2"
+                        d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+                      <path d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                C22.32,8.481,24.301,9.057,26.013,10.047z">
+                        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+                          dur="0.5s" repeatCount="indefinite" />
+                      </path>
+                    </svg>
+                  </span>
+                </button>
+              </form>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

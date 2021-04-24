@@ -35,6 +35,6 @@ const DEFAULT_KEY_OF_COOKIE_POPUP_SUFFIXES = 'ads-benzene'; // set default cooki
 
 //test
 
-jQuery(document).ready(($) => {
-    const pricePopUp = $().POPUPADS('price');
-})
+// jQuery(document).ready(($) => {
+//     const pricePopUp = $().POPUPADS('price');
+// })
