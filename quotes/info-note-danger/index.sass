@@ -35,57 +35,6 @@ $default-info-box-radius: 4px
         width: 12px
         top: 16px
 
-
-.danger-icon
-    box-sizing: border-box
-    position: absolute
-    display: block
-    transform: scale(var(--ggs,1))
-    width: 26px
-    height: 26px
-    border: 2px solid $danger
-    border-radius: 40px
-    &::after,&::before
-        content: ""
-        display: block
-        box-sizing: border-box
-        position: absolute
-        border-radius: 99px
-        width: 3px
-        background: $danger
-        left: 9px
-    &::after
-        top: 2px
-        height: 12px
-    &::before
-        height: 3px
-        bottom: 3px
-
-.info-icon
-    box-sizing: border-box
-    position: absolute
-    display: block
-    transform: translateX(180deg)
-    width: 26px
-    height: 26px
-    border: 2px solid $info
-    border-radius: 40px
-    &::after,&::before
-        content: ""
-        display: block
-        box-sizing: border-box
-        position: absolute
-        border-radius: 99px
-        width: 3px
-        background: $info
-        left: 9px
-    &::before
-        bottom: 3px
-        height: 12px
-    &::after
-        height: 3px
-        top: 2px
-
 .note-box
     padding: 4px 4px 16px 54px
     border-radius: $default-info-box-radius
@@ -117,27 +66,59 @@ $default-info-box-radius: 4px
         background-image: linear-gradient(to right, rgba($info, 0.03), rgba($info, 0.15))
         &::after
             background-image: linear-gradient(to right, rgba($info, 0.1), rgba($info, 0.9))
+        &::before
+            content: ''
+            display: inline-block
+            position: absolute
+            height: 36px
+            top: 36px
+            left: -16px
+            transform: rotate(-10deg)
+            background: #fff
+            border-radius: 99px
+            width: 32px
+            background-repeat: no-repeat
+            background-image: url('./info.png')
         .note-box__title
             color: $info
-    &__success
-        border: 1px solid $success
-        background: linear-gradient(to right, rgba($success, 0.03), rgba($success, 0.15))
-        &::after
-            background: linear-gradient(to right, rgba($success, 0.3), rgba($success, 1))
-        .note-box__title
-            color: $success
-    &__warning
+    &__idea
         border: 1px solid $warning
         background: linear-gradient(to right, rgba($warning, 0.03), rgba($warning, 0.15))
+        &::before
+            content: ''
+            display: inline-block
+            position: absolute
+            height: 36px
+            top: 36px
+            left: -16px
+            transform: rotate(-10deg)
+            background: #fff
+            border-radius: 99px
+            width: 32px
+            background-repeat: no-repeat
+            background-image: url('./idea.png')
         &::after
             background: linear-gradient(to right, rgba($warning, 0.03), rgba($warning, 1))
         .note-box__title
             color: $warning
     &__danger
-        // border: 1px solid $danger
+        border: 1px solid $danger
         background: linear-gradient(to right, rgba($danger, 0.03), rgba($danger, 0.15))
         &::after
             background: linear-gradient(to right, rgba($danger, 0.03), rgba($danger, 1))
+        &::before
+            content: ''
+            display: inline-block
+            position: absolute
+            height: 36px
+            top: 36px
+            left: -16px
+            transform: rotate(-10deg)
+            background: #fff
+            background-repeat: no-repeat
+            border-radius: 99px
+            width: 32px
+            background-image: url('./wrong.png')
         .note-box__title
             color: $danger
 .fixed-icon

@@ -35,76 +35,6 @@
   top: 16px;
 }
 
-.danger-icon {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  display: block;
-  -webkit-transform: scale(var(--ggs, 1));
-          transform: scale(var(--ggs, 1));
-  width: 26px;
-  height: 26px;
-  border: 2px solid #AA1E2C;
-  border-radius: 40px;
-}
-
-.danger-icon::after, .danger-icon::before {
-  content: "";
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  border-radius: 99px;
-  width: 3px;
-  background: #AA1E2C;
-  left: 9px;
-}
-
-.danger-icon::after {
-  top: 2px;
-  height: 12px;
-}
-
-.danger-icon::before {
-  height: 3px;
-  bottom: 3px;
-}
-
-.info-icon {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  display: block;
-  -webkit-transform: translateX(180deg);
-          transform: translateX(180deg);
-  width: 26px;
-  height: 26px;
-  border: 2px solid #2D4CC9;
-  border-radius: 40px;
-}
-
-.info-icon::after, .info-icon::before {
-  content: "";
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  border-radius: 99px;
-  width: 3px;
-  background: #2D4CC9;
-  left: 9px;
-}
-
-.info-icon::before {
-  bottom: 3px;
-  height: 12px;
-}
-
-.info-icon::after {
-  height: 3px;
-  top: 2px;
-}
-
 .note-box {
   padding: 4px 4px 16px 54px;
   border-radius: 4px;
@@ -156,41 +86,59 @@
   background-image: linear-gradient(to right, rgba(45, 76, 201, 0.1), rgba(45, 76, 201, 0.9));
 }
 
+.note-box__info::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 36px;
+  top: 36px;
+  left: -16px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background: #fff;
+  border-radius: 99px;
+  width: 32px;
+  background-repeat: no-repeat;
+  background-image: url("./info.png");
+}
+
 .note-box__info .note-box__title {
   color: #2D4CC9;
 }
 
-.note-box__success {
-  border: 1px solid #18634E;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(24, 99, 78, 0.03)), to(rgba(24, 99, 78, 0.15)));
-  background: linear-gradient(to right, rgba(24, 99, 78, 0.03), rgba(24, 99, 78, 0.15));
-}
-
-.note-box__success::after {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(24, 99, 78, 0.3)), to(#18634e));
-  background: linear-gradient(to right, rgba(24, 99, 78, 0.3), #18634e);
-}
-
-.note-box__success .note-box__title {
-  color: #18634E;
-}
-
-.note-box__warning {
+.note-box__idea {
   border: 1px solid #FA7D08;
   background: -webkit-gradient(linear, left top, right top, from(rgba(250, 125, 8, 0.03)), to(rgba(250, 125, 8, 0.15)));
   background: linear-gradient(to right, rgba(250, 125, 8, 0.03), rgba(250, 125, 8, 0.15));
 }
 
-.note-box__warning::after {
+.note-box__idea::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 36px;
+  top: 36px;
+  left: -16px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background: #fff;
+  border-radius: 99px;
+  width: 32px;
+  background-repeat: no-repeat;
+  background-image: url("./idea.png");
+}
+
+.note-box__idea::after {
   background: -webkit-gradient(linear, left top, right top, from(rgba(250, 125, 8, 0.03)), to(#fa7d08));
   background: linear-gradient(to right, rgba(250, 125, 8, 0.03), #fa7d08);
 }
 
-.note-box__warning .note-box__title {
+.note-box__idea .note-box__title {
   color: #FA7D08;
 }
 
 .note-box__danger {
+  border: 1px solid #AA1E2C;
   background: -webkit-gradient(linear, left top, right top, from(rgba(170, 30, 44, 0.03)), to(rgba(170, 30, 44, 0.15)));
   background: linear-gradient(to right, rgba(170, 30, 44, 0.03), rgba(170, 30, 44, 0.15));
 }
@@ -198,6 +146,22 @@
 .note-box__danger::after {
   background: -webkit-gradient(linear, left top, right top, from(rgba(170, 30, 44, 0.03)), to(#aa1e2c));
   background: linear-gradient(to right, rgba(170, 30, 44, 0.03), #aa1e2c);
+}
+
+.note-box__danger::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 36px;
+  top: 36px;
+  left: -16px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background: #fff;
+  background-repeat: no-repeat;
+  border-radius: 99px;
+  width: 32px;
+  background-image: url("./wrong.png");
 }
 
 .note-box__danger .note-box__title {
