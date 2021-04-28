@@ -1,0 +1,1046 @@
+/************************************
+  ********THEME OVERRIDE*************
+    *********************************/
+//fixed banner
+$primary: #4e3284;
+.td-container-header
+  height: 0 !important
+  padding: 0
+  margin: 0
+  .td-header-sp-recs
+    height: 0 !important
+    padding: 0
+    margin: 0
+
+.td-banner-wrap-full .td-container-wrap
+    background: #e7e5ee
+.td-header-wrap
+    background: #e7e5ee
+.td-icon-mobile:before
+  line-height: unset
+
+.item-hide
+  display: none !important
+
+
+.td-main-sidebar .td-module-meta-info
+  font-size: 13px
+
+.td-category-grid
+  .entry-thumb
+    width: 100% !important
+    height: 100%
+
+  .td-module-meta-info
+    font-size: 14px
+
+.td-category-header .td-category-pulldown-filter
+  top: 75px
+
+.td-category-grid .td-module-meta-info
+  font-size: 14px
+
+.search-form-no-sidebar
+  margin: 0px 24px
+  width: 530px
+  float: right
+
+.td-main-content .no-results h2
+  font-size: 24px
+  margin: 0
+
+.td-author-counters
+  font-size: 14px
+  font-weight: 400
+
+.td-post-author-name span
+  color: #111111
+  font-family: GoogleSans Medium, Arial, sans-serif
+  margin: 0
+
+.td-category-header .td-category-pulldown-filter
+  display: none
+
+.td-post-source-tags a
+  font-size: 13px
+
+.td-related-title a
+  font-size: 16px
+
+.td-category-grid .td-container .td-pb-row
+  padding-top: 115px
+
+.category .td-category-grid .td_block_wrap
+  margin-bottom: 0
+
+.td-main-content-wrap.td-container-wrap.tag-detail .td-pb-row
+  padding-top: 80px
+
+.td-crumb-container .entry-crumbs .entry-crumbs-box
+  padding-bottom: 10px
+  border-bottom: solid 2px $primary
+  display: none
+
+.td-main-content-wrap.td-container-wrap
+  .tdc-content-wrap .td-pb-row
+    padding-top: 0
+
+  &.news-detail, &.tag-detail
+    background: #e6e7ee
+
+    .td-crumb-container
+      height: auto
+
+    .entry-crumbs-box
+      display: block
+
+.td-post-template-default
+  .td-ss-main-content .td_block_wrap
+    margin-bottom: 0
+
+  .td-ss-main-sidebar .td_block_wrap-box
+    background: #fff
+    padding: 14px
+
+.td-main-content-wrap.td-container-wrap.tag-detail
+  .td-main-sidebar
+    padding: 0
+
+  .td-main-content
+    padding: 0 10px
+
+  .td-ss-main-content
+    background: #fff
+    padding: 0 14px 14px 14px
+    margin-bottom: 20px
+
+    .td_block_wrap
+      margin-bottom: 0
+
+  .td-ss-main-sidebar
+    .td_block_wrap
+      padding: 0 10px 0 10px
+      margin-bottom: 20px
+
+    .td_block_wrap-box
+      background: #fff
+      padding: 14px
+
+  .td-ss-main-content .page-nav
+    margin: 0
+
+.td-main-sidebar .td-animation-stack:hover .entry-title a, .td-main-content .td_block_related_posts .entry-title a:hover
+  color: $primary
+
+.comments .comment-form .submit:hover
+  background: $primary
+
+.td-main-content .td_block_related_posts .td-animation-stack:hover .entry-title a
+  color: $primary
+
+.comment-form-cookies-consent label
+  font-family: GoogleSans Medium, Arial, sans-serif
+  font-weight: normal
+
+.comment-form textarea
+  font-size: 14px
+  line-height: 20px
+
+.td-comment-form-warnings
+  .td-warning-comment, .td-warning-author, .td-warning-email, .td-warning-email-error
+    font-size: 13px
+    line-height: 18px
+
+
+#reply-title
+  font-family: GoogleSans Medium, Arial, sans-serif
+  font-weight: normal
+
+.td-post-small-box a:hover
+  color: #fff
+  background-color: $primary
+  border-color: $primary
+
+.td-main-content .td-next-prev-wrap a:hover, .td-main-sidebar .td-next-prev-wrap a:hover
+  background-color: $primary
+  border-color: $primary
+
+.td-scroll-up
+  right: 30px
+  transform: translate3d(0, 200px, 0)
+
+.td-scroll-up-visible
+  right: 30px
+  bottom: 80px
+  transform: translate3d(0, 0, 0)
+
+.padding-5
+  padding: 5px
+
+.page-nav
+  .current
+    background-color: $primary
+    border-color: $primary
+
+  text-align: center
+
+  a
+    border: 1px solid $primary
+    float: none
+
+  span
+    float: none
+
+.h1-h2-visible
+  opacity: 0
+  position: absolute
+  z-index: -9999
+  top: -9999px
+
+.td-page-content
+  padding-bottom: 0
+
+  p
+    margin-bottom: 0
+    display: none
+
+.no-padding
+  padding: 0
+
+a, .td-page-content a
+  outline: 0
+  border: 0
+  text-decoration: none
+
+a
+  outline: none
+  text-decoration: none
+  cursor: pointer
+
+  &:active, &:hover, &:visited, &:focus
+    outline: none
+    text-decoration: none
+    cursor: pointer
+
+.td-page-content a:hover
+  outline: none
+  text-decoration: none
+  cursor: pointer
+
+a
+  &.effect-button
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+      opacity: 0
+      background-color: rgba(255, 255, 255, 0.2)
+      transition: all 0.4s
+      transform: scale(0.5, 1)
+
+    &:hover::before
+      opacity: 1
+      transform: scale(1, 1)
+
+  &.effect-button-left-right
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 0%
+      height: 100%
+      z-index: 1
+      opacity: 0
+      background-color: rgba(255, 255, 255, 0.5)
+      transition: all 0.7s
+
+    &:hover::before
+      opacity: 1
+      width: 100%
+
+  br
+    display: none
+
+span br
+  display: none
+
+.clear
+  clear: both
+
+@media (max-width: 979px)
+  .comments .comment-form .submit
+    font-weight: normal
+
+  .td-category-grid .td-container .td-pb-row
+    padding-top: 120px
+
+@media (max-width: 480px)
+  .td-main-content .entry-title
+    min-height: unset
+
+  .td-post-template-default .td-ss-main-sidebar
+    .td_block_wrap
+      padding: 0
+      margin-bottom: 0
+
+    .td_block_wrap-box
+      padding: 20px
+
+  .td-main-content-wrap.td-container-wrap
+    &.news-detail
+      background: #fff
+      padding-bottom: 20px
+
+    &.tag-detail
+      .td-container
+        padding-left: 0
+        padding-right: 0
+
+      .td-main-content
+        padding: 0
+
+      .td-crumb-container .entry-crumbs
+        padding: 14px 20px 20px 20px
+
+      .td-ss-main-content
+        padding: 0 20px 20px 20px
+        margin-bottom: 0
+
+      .td-ss-main-sidebar
+        .td_block_wrap
+          padding: 0
+          margin-bottom: 0
+
+        .td_block_wrap-box
+          padding: 20px
+
+      background: #fff
+      padding-bottom: 20px
+
+  .comment-link
+    display: unset
+    padding-left: 5px
+
+/*--- Custom menu ---
+
+.td-header-style-7
+  .sf-menu
+    margin-top: 0
+    margin-left: 20px
+
+  .td-header-sp-logo img
+    display: block
+    max-width: 200px
+    height: 60px
+    max-height: 60px
+    line-height: 60px
+    padding: 10px 0
+    top: 0
+
+.sf-menu
+  >
+    .current-menu-item > a:after, .current-menu-ancestor > a:after, .current-category-ancestor > a:after, li:hover > a:after, .sfHover > a:after
+      backgroun
+      width: 50%
+      border-radius: 2px
+
+  .td-icon-menu-down
+    position: absolute
+    top: 50%
+    margin-top: -5px
+    padding-left: 2px
+    font-size: 8px
+
+.td-mobile-content
+  .current-menu-item > a, .current-menu-ancestor > a, .current-category-ancestor > a
+    color: #569BD4
+
+@media (max-width: 1023px) and (min-width: 992px)
+  .td-header-menu-wrap-full.td-container-wrap .td-container
+    width: 992px
+
+  .td-header-style-7
+    .td-header-sp-logo img
+      max-width: 160px
+
+    .sf-menu > li > a
+      padding: 0 10px
+
+@media (max-width: 991px) and (min-width: 980px)
+  .td-header-menu-wrap-full.td-container-wrap .td-container
+    width: 970px
+
+  .td-header-style-7 .td-header-sp-logo img
+    max-width: 150px
+
+@media (max-width: 979px)
+  #menu-esign-1
+    display: none
+
+  .td-mobile-content li a
+    font-weight: normal
+
+/*--- end custom menu ---
+
+
+/*#region Custom Heading
+
+h1.td-header-sp-logo
+  margin: 0
+
+.footer-esign
+  h1, h2, h3, h4, h5, h6
+    margin: 0
+
+.td-page-content
+  h1, h2, h3, h4, h5, h6
+    margin: 0
+
+/*#endregion
+
+/*#region Cac bai viet noi bat
+
+.posts-highlights
+  padding-top: 24px
+
+  .td-big-grid-post
+    float: left
+
+  .td-post-thumb
+    position: relative
+    z-index: 0
+    overflow: hidden
+
+    a
+      display: block
+
+      &:before
+        content: ""
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%)
+
+        /* FF3.6+
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)))
+
+        /* Chrome,Safari4+
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%)
+
+        /* Chrome10+,Safari5.1+
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%)
+
+        /* Opera 11.10+
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%)
+
+        /* IE10+
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%)
+
+        /* W3C
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0)
+
+        /* IE6-9
+        bottom: 0
+        content: ""
+        display: block
+        height: 100%
+        width: 100%
+        position: absolute
+        -webkit-transition: background-color 0.3s ease
+        -moz-transition: background-color 0.3s ease
+        -o-transition: background-color 0.3s ease
+        transition: background-color 0.3s ease
+        z-index: 1
+
+    .img-post-thumb img
+      transition: transform 0.3s ease, opacity 0.3s
+      -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s
+      transition-timing-function: ease
+
+    a:hover
+      opacity: 0.9
+
+      img
+        transform: scale(1.1)
+        -webkit-transform: scale(1.1)
+        -moz-transform: scale(1.1)
+        -o-transform: scale(1.1)
+        -ms-transform: scale(1.1)
+
+  .td-big-thumb
+    .td-post-thumb
+      width: 532px
+      height: 399px
+
+    .img-post-thumb img
+      height: 399px
+      width: 100%
+
+  .td-small-thumb
+    .td-post-thumb
+      width: 265px
+      height: 198px
+
+    .img-post-thumb img
+      height: 198px
+      width: 100%
+
+  .td-post-thumb-detail
+    position: relative
+
+  .desc-thumb
+    position: absolute
+    bottom: 10px
+    margin: 0 10px
+    color: #FFF
+    font-size: 16px
+
+    z-index: 2
+    line-height: 20px
+
+  .td-post-0
+    .desc-thumb
+      font-size: 24px
+      line-height: 30px
+
+    margin-right: 3px
+
+  .td-small-thumb
+    float: left
+
+  .td-post-1
+    margin: 0 3px 3px 0
+
+  .td-post-2
+    margin-bottom: 3px
+
+  .td-post-3
+    margin-right: 3px
+
+@media (min-width: 1019px) and (max-width: 1140px)
+  .posts-highlights
+    padding-top: 20px
+
+    .td-big-thumb
+      .td-post-thumb
+        width: 504px
+        height: 355px
+
+      .img-post-thumb img
+        height: 355px
+        width: 100%
+
+    .td-small-thumb
+      .td-post-thumb
+        width: 235px
+        height: 176px
+
+      .img-post-thumb img
+        height: 176px
+        width: 100%
+
+@media (min-width: 768px) and (max-width: 1018px)
+  .posts-highlights
+    padding-top: 14px
+
+    .td-big-thumb
+      .td-post-thumb
+        width: 374px
+        height: 271px
+
+      .img-post-thumb img
+        height: 271px
+        width: 100%
+
+    .td-small-thumb
+      .td-post-thumb
+        width: 180px
+        height: 134px
+
+      .img-post-thumb img
+        height: 134px
+        width: 100%
+
+    .desc-thumb
+      font-size: 90%
+      line-height: 1.4
+
+    .td-post-0 .desc-thumb
+      font-size: 16px
+      line-height: 20px
+
+@media (max-width: 767px)
+  .posts-highlights
+    padding: 20px 20px 0
+
+    .td-container
+      padding: 0
+
+    .td-big-grid-post
+      float: none
+
+    .td-big-thumb
+      .td-post-thumb
+        width: 100%
+        height: 100%
+
+      .img-post-thumb img
+        height: 100%
+
+    .td-post-0
+      margin: 0 0 3px
+
+    .td-small-thumb
+      .td-post-thumb
+        width: 100%
+        height: 170px
+
+      .img-post-thumb img
+        height: 170px
+
+    .td-post-1, .td-post-2, .td-post-3
+      margin: 0 3px 0 0
+
+    .td-small-grid-post
+      overflow-x: auto
+      white-space: nowrap
+      font-size: 0
+      overflow-y: hidden
+      padding-top: 3px
+      z-index: 0
+      -webkit-overflow-scrolling: touch
+      transform: translate3d(0, 0, 0)
+
+    .td-small-thumb
+      float: none
+      display: inline-block
+      vertical-align: top
+      width: 80%
+      white-space: normal
+
+    .td-post-0 .desc-thumb
+      font-size: 22px
+      line-height: 28px
+
+/*#endregion
+
+/*#region Sidebar
+
+.fb-sidebar
+  text-align: center
+
+/*#endregion
+
+/*region Custom news
+
+.archive.category
+  .td-category-header
+    padding: 100px 0 0
+
+  .td-main-content-wrap
+    padding-top: 24px
+
+    .entry-title
+      line-height: 1.42857143
+
+      a
+        color: #133563
+
+        &:hover
+          color: $primary
+
+    .td-excerpt
+      font-size: 16px
+
+.single.single-post
+  .td-main-content-wrap
+    background: #e6e7ee
+    position: relative
+    padding-top: 24px !important
+    .td-container
+      padding: 0
+
+    .td-main-content
+      padding: 0 12px
+
+  .td-main-content
+    .td-crumb-container
+      background: #FFF
+      padding: 18px
+      margin: 0
+
+    .entry-crumbs
+      font-size: 16px
+      line-height: 1.42857143
+      color: $primary
+      padding: 0 0 18px
+      border-bottom: solid 2px $primary
+
+      a
+        color: #111111
+
+      .td-icon-right:before
+        font-size: 14px
+        color: #111111
+
+  .td-ss-main-content
+    background: #FFF
+    padding: 0 18px 18px
+    margin-bottom: 24px
+
+    .td-post-title .entry-title
+      font-family: GoogleSans Bold, Arial, sans-serif
+      font-size: 28px
+      line-height: 1.42857143
+      color: $primary
+
+    .td-module-meta-info
+      font-size: 14px
+      h1
+        font-size: 32px
+        line-height: 40px
+        margin-top: 33px
+        margin-bottom: 23px
+
+      h2
+        font-size: 27px
+        line-height: 38px
+        margin-top: 30px
+        margin-bottom: 20px
+
+      h3
+        font-size: 22px
+        line-height: 30px
+        margin-top: 27px
+        margin-bottom: 17px
+
+      h4
+        font-size: 19px
+        line-height: 29px
+        margin-top: 24px
+        margin-bottom: 14px
+
+      h5
+        font-size: 17px
+        line-height: 25px
+        margin-top: 21px
+        margin-bottom: 11px
+
+      h6
+        font-size: 16px
+        line-height: 24px
+        margin-top: 21px
+        margin-bottom: 11px
+
+      p, ul li
+        font-size: 16px
+
+    .td-post-source-tags
+      span
+        font-size: 12px
+
+      a
+        font-size: 13px
+
+        &:hover, &:focus, &:active
+          background-color: $primary
+          border-color: $primary
+          color: #FFF
+          opacity: 1
+
+    .td-related-title
+      border-bottom: 2px solid $primary
+      margin-bottom: 18px
+
+      a
+        font-size: 16px
+
+        &:hover, &:focus, &:active
+          color: $primary
+          opacity: 1
+
+        &.td-cur-simple-item
+          background-color: $primary
+          opacity: 1
+
+          &:hover, &:focus, &:active
+            color: #FFF
+
+    .td-related-row
+      margin-right: -18px
+
+      .td-related-span4
+        padding-right: 18px
+
+    .td_block_related_posts .entry-title
+      text-align: justify
+      margin-bottom: 18px
+
+      a
+        font-size: 15px
+        line-height: 1.42857143
+        color: #133563
+
+  .td-main-sidebar
+    padding: 0 12px
+
+  .td-ss-main-sidebar
+    margin-bottom: 24px
+
+    .widget, .td_block_wrap
+      background: #FFF
+      margin-bottom: 0
+      padding: 18px
+
+    .block-title
+      border-color: $primary
+      margin-bottom: 18px
+
+      > span
+        background-color: $primary
+        font-size: 16px
+
+    .td_block_inner
+      margin-right: -18px
+
+    .td-block-span12
+      padding-right: 18px
+
+    .td_module_wrap, .td-block-span12:last-child .td_module_wrap
+      padding-bottom: 18px
+
+    .entry-title
+      text-align: justify
+
+      a
+        font-size: 15px
+        line-height: 1.42857143
+        color: #133563
+
+        &:hover, &:focus, &:active
+          color: $primary
+          opacity: 1
+
+    .td_module_wrap
+      &:hover .entry-title a, &:focus .entry-title a, &:active .entry-title a
+        color: $primary
+        opacity: 1
+
+  .td-next-prev-wrap a
+    &:hover, &:focus, &:active
+      background: $primary
+      border-color: $primary
+      color: #FFF
+      opacity: 1
+
+  .td-ss-main-content .entry-title a
+    &:hover, &:focus, &:active
+      color: $primary
+      opacity: 1
+
+  .td_module_related_posts
+    &:hover .entry-title a, &:focus .entry-title a, &:active .entry-title a
+      color: $primary
+      opacity: 1
+
+  .td-ss-main-sidebar .td-next-prev-wrap
+    margin-top: 18px
+
+.archive.tag
+  .td-main-content-wrap
+    background: #e6e7ee
+    // padding-top: 124px
+
+    .td-container
+      padding: 0
+
+    .td-main-content
+      padding: 0 12px
+
+  .td-main-content
+    .td-crumb-container
+      background: #FFF
+      padding: 18px
+      margin: 0
+
+    .entry-crumbs
+      font-size: 16px
+      line-height: 1.42857143
+      color: #111111
+      padding: 0 0 18px
+      border-bottom: solid 2px $primary
+
+      .td-icon-right:before
+        font-size: 14px
+
+  .td-ss-main-content
+    background: #FFF
+    padding: 0 18px 18px
+    margin-bottom: 24px
+
+    .entry-title a
+      line-height: 1.42857143
+      color: #133563
+
+      &:hover, &:focus, &:active
+        color: $primary
+        opacity: 1
+
+    .td_module_wrap
+      &:hover .entry-title a, &:focus .entry-title a, &:active .entry-title a
+        color: $primary
+        opacity: 1
+
+  .td-main-content-wrap .td-excerpt
+    font-size: 16px
+
+  .td-main-sidebar
+    padding: 0 12px
+
+  .td-ss-main-sidebar
+    margin-bottom: 24px
+
+    .td_block_wrap, .widget
+      background: #FFF
+      margin-bottom: 0
+      padding: 18px
+
+    .block-title
+      border-color: $primary
+      margin-bottom: 18px
+
+      > span
+        background-color: $primary
+        font-size: 16px
+
+    .td_block_inner
+      margin-right: -18px
+
+    .td-block-span12
+      padding-right: 18px
+
+      .td_module_wrap, &:last-child .td_module_wrap
+        padding-bottom: 18px
+
+    .entry-title
+      text-align: justify
+
+      a
+        font-size: 15px
+        line-height: 1.42857143
+        color: #133563
+
+        &:hover, &:focus, &:active
+          color: $primary
+          opacity: 1
+
+    .td_module_wrap
+      &:hover .entry-title a, &:focus .entry-title a, &:active .entry-title a
+        color: $primary
+        opacity: 1
+
+  .td-next-prev-wrap
+    margin-top: 18px
+
+    a
+      &:hover, &:focus, &:active
+        background: $primary
+        border-color: $primary
+        color: #FFF
+        opacity: 1
+
+  .page-nav .current
+    background-color: $primary
+    border-color: $primary
+
+/*#region Responsive
+@media (max-width: 1140px) and (min-width: 1019px)
+  .archive.category .td-main-content-wrap
+    padding-top: 20px
+
+  .single.single-post, .archive.tag
+    .td-main-content
+        padding: 0 10px
+
+    .td-ss-main-content
+      margin-bottom: 20px
+
+    .td-main-sidebar
+      padding: 0 10px
+
+    .td-ss-main-sidebar
+      margin-bottom: 20px
+
+@media (max-width: 1018px) and (min-width: 768px)
+  .archive.category .td-main-content-wrap
+    padding-top: 14px
+
+  .single.single-post, .archive.tag
+    .td-main-content-wrap
+      padding-top: 114px
+
+      .td-main-content
+        padding: 0 7px
+
+    .td-ss-main-content
+      margin-bottom: 14px
+
+    .td-main-sidebar
+      padding: 0 7px
+
+    .td-ss-main-sidebar
+      margin-bottom: 14px
+
+@media (max-width: 767px)
+  .archive.category
+
+    .td-main-content-wrap
+      padding-top: 20px
+
+  .single.single-post
+    .td-main-content-wrap
+      background: #FFF
+      // padding: 40px 0 18px chinh sua
+
+      .td-main-content
+        padding: 0
+
+    .td-ss-main-content
+      margin-bottom: 0
+
+      .td_block_related_posts .item-details
+        margin-bottom: 18px
+
+    .td-main-sidebar
+      padding: 0
+
+    .td-ss-main-sidebar
+      margin-bottom: 0
+
+  .archive.tag
+    .td-main-content-wrap
+      background: #FFF
+      padding: 100px 0 18px
+
+      .td-main-content
+        padding: 0
+
+    .td-ss-main-content
+      margin-bottom: 0
+
+    .td-main-sidebar
+      padding: 0
+
+    .td-ss-main-sidebar
+      margin-bottom: 0
+.tdm-header-style-3 .td-main-menu-logo img
+    max-height: 60px
+
+//scroll up
+.td-scroll-up
+  background-color: #4db2ec !important
+  left: 5px !important
+  bottom: 28px !important
+  border-radius: 999px

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito Sans", sans-serif;
+      }
+      .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media (min-width: 768px) {
+        .container {
+          width: 750px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 970px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .container {
+          width: 1170px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="accordion active-accordion">
+            <h4 class="accordion-title">
+                Lorem ipsum, dolor sit amet consectetur adipisicing?
+            </h4>
+            <div class="accordion-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod expedita unde aperiam! Perferendis dolor nemo aliquid nobis soluta, cum vel.
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.accordion-title').click(() => {
+            $('.accordion').toggleClass('active-accordion');
+        })
+    </script>
+  </body>
+</html>
