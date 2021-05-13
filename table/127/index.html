@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Nunito Sans", sans-serif;
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <style>
+            #career {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            #career th,
+            #career td {
+                border: 1px solid #4e3284;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: default;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            #career th:nth-child(1),
+            #career td:nth-child(1) {
+                text-align: center;
+                width: 8%;
+                padding: 6px 0;
+                font-weight: bold;
+            }
+
+            #career td:nth-child(2),
+            #career th:nth-child(2) {
+                padding: 4px 12px;
+            }
+
+            #career th {
+                background-color: #ff5200;
+                color: white;
+            }
+
+            #career tr:nth-child(even):not(:nth-child(1)) {
+                background: #f7f7f7;
+            }
+
+            /*# sourceMappingURL=index.css.map */
+        </style>
+        <table id="career">
+            <tbody>
+                <tr>
+                    <th><strong>STT</strong></th>
+                    <th><strong>NGÀNH, NGHỀ KINH DOANH CÓ ĐIỀU KIỆN</strong></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sản xuất con dấu</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kinh doanh công cụ hỗ trợ (bao gồm cả sửa chữa)</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kinh doanh các loại pháo, trừ pháo nổ</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Kinh doanh thiết bị, phần mềm ngụy trang dùng để ghi âm, ghi hình, định vị</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Kinh doanh súng bắn sơn</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kinh doanh quân trang, quân dụng cho lực lượng vũ trang, vũ khí quân dụng, trang
+                        thiết bị, kỹ thuật, khí tài, phương tiện chuyên dùng quân sự, công an; linh kiện, bộ phận, phụ
+                        tùng, vật tư và trang thiết bị đặc chủng, công nghệ chuyên dùng chế tạo chúng</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Kinh doanh dịch vụ cầm đồ</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Kinh doanh dịch vụ xoa bóp</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Kinh doanh thiết bị phát tín hiệu của xe được quyền ưu tiên</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Kinh doanh dịch vụ bảo vệ</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Kinh doanh dịch vụ phòng cháy, chữa cháy</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Hành nghề luật sư</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Hành nghề công chứng</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Hành nghề giám định tư pháp trong các lĩnh vực tài chính, ngân hàng, xây dựng, cổ
+                        vật, di vật, bản quyền tác giả</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Hành nghề đấu giá tài sản</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Hành nghề thừa phát lại</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Hành nghề quản lý, thanh lý tài sản của doanh nghiệp, hợp tác xã trong quá trình
+                        giải quyết phá sản</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Kinh doanhdịch vụ kế toán</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Kinh doanh dịch vụ kiểm toán</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Kinh doanh dịch vụ làm thủ tục về thuế</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Kinh doanh dịch vụ làm thủ tục hải quan</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Kinh doanh hàng miễn thuế</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Kinh doanh kho ngoại quan, địa điểm thu gom hàng lẻ</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Kinh doanh địa điểm làm thủ tục hải quan, tập kết, kiểm tra, giám sát hải quan</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Kinh doanh chứng khoán</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>Kinh doanh dịch vụ đăng ký, lưu ký, bù trừ và thanh toán chứng khoán của Tổng công
+                        ty lưu ký và bù trừ chứng khoán Việt Nam, tổ chức thị trường giao dịch chứng khoán niêm yết và
+                        các loại chứng khoán khác</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Kinh doanh bảo hiểm</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Kinh doanh tái bảo hiểm</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>Môi giới bảo hiểm, hoạt động phụ trợ bảo hiểm</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Đại lý bảo hiểm</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Kinh doanh dịch vụ thẩm định giá</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>Kinh doanh xổ số</td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>Kinh doanh trò chơi điện tử có thưởng dành cho người nước ngoài</td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>Kinh doanh dịch vụ xếp hạng tín nhiệm</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>Kinh doanh ca-si-nô (casino)</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>Kinh doanh đặt cược</td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td>Kinh doanh dịch vụ quản lý quỹ hưu trí tự nguyện</td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>Kinh doanh xăng dầu</td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>Kinh doanh khí</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>Kinh doanh dịch vụ giám định thương mại</td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>Kinh doanh vật liệu nổ công nghiệp (bao gồm cả hoạt động tiêu hủy)</td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>Kinh doanh tiền chất thuốc nổ</td>
+                </tr>
+                <tr>
+                    <td>43</td>
+                    <td>Kinh doanh ngành, nghề có sử dụng vật liệu nổ công nghiệp và tiền chất thuốc nổ</td>
+                </tr>
+                <tr>
+                    <td>44</td>
+                    <td>Kinh doanh dịch vụ nổ mìn</td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>Kinh doanh hóa chất, trừ hóa chất bị cấm theo Công ước quốc tế về cấm phát triển,
+                        sản xuất, tàng trữ, sử dụng và phá hủy vũ khí hóa học</td>
+                </tr>
+                <tr>
+                    <td>46</td>
+                    <td>Kinh doanh rượu</td>
+                </tr>
+                <tr>
+                    <td>47</td>
+                    <td>Kinh doanh sản phẩm thuốc lá, nguyên liệu thuốc lá, máy móc, thiết bị thuộc chuyên
+                        ngành thuốc lá</td>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>Kinh doanh thực phẩm thuộc lĩnh vực quản lý chuyên ngành của Bộ Công Thương</td>
+                </tr>
+                <tr>
+                    <td>49</td>
+                    <td>Hoạt động Sở Giao dịch hàng hóa</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>Hoạt động phát điện, truyền tải, phân phối, bán buôn, bán lẻ, tư vấn chuyên ngành
+                        điện lực</td>
+                </tr>
+                <tr>
+                    <td>51</td>
+                    <td>Xuất khẩu gạo</td>
+                </tr>
+                <tr>
+                    <td>52</td>
+                    <td>Kinh doanh tạm nhập, tái xuất hàng hóa có thuế tiêu thụ đặc biệt</td>
+                </tr>
+                <tr>
+                    <td>53</td>
+                    <td>Kinh doanh tạm nhập, tái xuất hàng thực phẩm đông lạnh</td>
+                </tr>
+                <tr>
+                    <td>54</td>
+                    <td>Kinh doanh tạm nhập, tái xuất hàng hóa thuộc Danh mục hàng hóa đã qua sử dụng</td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>Kinh doanh khoáng sản</td>
+                </tr>
+                <tr>
+                    <td>56</td>
+                    <td>Kinh doanh tiền chất công nghiệp</td>
+                </tr>
+                <tr>
+                    <td>57</td>
+                    <td>Hoạt động mua bán hàng hóa và các hoạt động liên quan trực tiếp đến hoạt động mua
+                        bán hàng hóa của nhà cung cấp dịch vụ nước ngoài tại Việt Nam</td>
+                </tr>
+                <tr>
+                    <td>58</td>
+                    <td>Kinh doanh theo phương thức bán hàng đa cấp</td>
+                </tr>
+                <tr>
+                    <td>59</td>
+                    <td>Hoạt động thương mại điện tử</td>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>Hoạt động dầu khí</td>
+                </tr>
+                <tr>
+                    <td>61</td>
+                    <td>Kiểm toán năng lượng</td>
+                </tr>
+                <tr>
+                    <td>62</td>
+                    <td>Hoạt động giáo dục nghề nghiệp</td>
+                </tr>
+                <tr>
+                    <td>63</td>
+                    <td>Kiểm định chất lượng giáo dục nghề nghiệp</td>
+                </tr>
+                <tr>
+                    <td>64</td>
+                    <td>Kinh doanh dịch vụ đánh giá kỹ năng nghề</td>
+                </tr>
+                <tr>
+                    <td>65</td>
+                    <td>Kinh doanh dịch vụ kiểm định kỹ thuật an toàn lao động</td>
+                </tr>
+                <tr>
+                    <td>66</td>
+                    <td>Kinh doanh dịch vụ huấn luyện an toàn lao động, vệ sinh lao động</td>
+                </tr>
+                <tr>
+                    <td>67</td>
+                    <td>Kinh doanh dịch vụ việc làm</td>
+                </tr>
+                <tr>
+                    <td>68</td>
+                    <td>Kinh doanh dịch vụ đưa người lao động đi làm việc ở nước ngoài</td>
+                </tr>
+                <tr>
+                    <td>69</td>
+                    <td>Kinh doanh dịch vụ cai nghiện ma túy tự nguyện, cai nghiện thuốc lá, điều trị
+                        HIV/AIDS, chăm sóc người cao tuổi, người khuyết tật, trẻ em</td>
+                </tr>
+                <tr>
+                    <td>70</td>
+                    <td>Kinh doanh dịch vụ cho thuê lại lao động</td>
+                </tr>
+                <tr>
+                    <td>71</td>
+                    <td>Kinh doanh vận tải đường bộ</td>
+                </tr>
+                <tr>
+                    <td>72</td>
+                    <td>Kinh doanh dịch vụ bảo hành, bảo dưỡng xe ô tô</td>
+                </tr>
+                <tr>
+                    <td>73</td>
+                    <td>Sản xuất, lắp ráp, nhập khẩu xe ô tô</td>
+                </tr>
+                <tr>
+                    <td>74</td>
+                    <td>Kinh doanh dịch vụ kiểm định xe cơ giới</td>
+                </tr>
+                <tr>
+                    <td>75</td>
+                    <td>Kinh doanh dịch vụ đào tạo lái xe ô tô</td>
+                </tr>
+                <tr>
+                    <td>76</td>
+                    <td>Kinh doanh dịch vụ đào tạo thẩm tra viên an toàn giao thông</td>
+                </tr>
+                <tr>
+                    <td>77</td>
+                    <td>Kinh doanh dịch vụ sát hạch lái xe</td>
+                </tr>
+                <tr>
+                    <td>78</td>
+                    <td>Kinh doanh dịch vụ thẩm tra an toàn giao thông</td>
+                </tr>
+                <tr>
+                    <td>79</td>
+                    <td>Kinh doanh vận tải đường thủy</td>
+                </tr>
+                <tr>
+                    <td>80</td>
+                    <td>Kinh doanh dịch vụ đóng mới, hoán cải, sửa chữa, phục hồi phương tiện thủy nội địa
+                    </td>
+                </tr>
+                <tr>
+                    <td>81</td>
+                    <td>Kinh doanh dịch vụ đào tạo thuyền viên và người lái phương tiện thủy nội địa</td>
+                </tr>
+                <tr>
+                    <td>82</td>
+                    <td>Đào tạo, huấn luyện thuyền viên hàng hải và tổ chức tuyển dụng, cung ứng thuyền viên
+                        hàng hải</td>
+                </tr>
+                <tr>
+                    <td>83</td>
+                    <td>Kinh doanh dịch vụ bảo đảm an toàn hàng hải</td>
+                </tr>
+                <tr>
+                    <td>84</td>
+                    <td>Kinh doanh vận tải biển</td>
+                </tr>
+                <tr>
+                    <td>85</td>
+                    <td>Kinh doanh dịch vụ lai dắt tàu biển</td>
+                </tr>
+                <tr>
+                    <td>86</td>
+                    <td>Nhập khẩu, phá dỡ tàu biển đã qua sử dụng</td>
+                </tr>
+                <tr>
+                    <td>87</td>
+                    <td>Kinh doanh dịch vụ đóng mới, hoán cải, sửa chữa tàu biển</td>
+                </tr>
+                <tr>
+                    <td>88</td>
+                    <td>Kinh doanh khai thác cảng biển</td>
+                </tr>
+                <tr>
+                    <td>89</td>
+                    <td>Kinh doanh vận tải hàng không</td>
+                </tr>
+                <tr>
+                    <td>90</td>
+                    <td>Kinh doanh dịch vụ thiết kế, sản xuất, bảo dưỡng, thử nghiệm tàu bay, động cơ tàu
+                        bay, cánh quạt tàu bay và trang bị, thiết bị tàu bay tại Việt Nam</td>
+                </tr>
+                <tr>
+                    <td>91</td>
+                    <td>Kinh doanh cảng hàng không, sân bay</td>
+                </tr>
+                <tr>
+                    <td>92</td>
+                    <td>Kinh doanh dịch vụ hàng không tại cảng hàng không, sân bay</td>
+                </tr>
+                <tr>
+                    <td>93</td>
+                    <td>Kinh doanh dịch vụ bảo đảm hoạt động bay</td>
+                </tr>
+                <tr>
+                    <td>94</td>
+                    <td>Kinh doanh dịch vụ đào tạo, huấn luyện nghiệp vụ nhân viên hàng không</td>
+                </tr>
+                <tr>
+                    <td>95</td>
+                    <td>Kinh doanh vận tải đường sắt</td>
+                </tr>
+                <tr>
+                    <td>96</td>
+                    <td>Kinh doanh kết cấu hạ tầng đường sắt</td>
+                </tr>
+                <tr>
+                    <td>97</td>
+                    <td>Kinh doanh đường sắt đô thị</td>
+                </tr>
+                <tr>
+                    <td>98</td>
+                    <td>Kinh doanh dịch vụ vận tải đa phương thức</td>
+                </tr>
+                <tr>
+                    <td>99</td>
+                    <td>Kinh doanh dịch vụ vận chuyển hàng nguy hiểm</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>Kinh doanh vận tải đường ống</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Kinh doanh bất động sản</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Kinh doanh nước sạch (nước sinh hoạt)</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Kinh doanh dịch vụ kiến trúc</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Kinh doanh dịch vụ tư vấn quản lý dự án đầu tư xây dựng</td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Kinh doanh dịch vụ khảo sát xây dựng</td>
+                </tr>
+                <tr>
+                    <td>106</td>
+                    <td>Kinh doanh dịch vụ thiết kế, thẩm tra thiết kế xây dựng</td>
+                </tr>
+                <tr>
+                    <td>107</td>
+                    <td>Kinh doanh dịch vụ tư vấn giám sát thi công xây dựng công trình</td>
+                </tr>
+                <tr>
+                    <td>108</td>
+                    <td>Kinh doanh dịch vụ thi công xây dựng công trình</td>
+                </tr>
+                <tr>
+                    <td>109</td>
+                    <td>Hoạt động xây dựng của nhà thầu nước ngoài</td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>Kinh doanh dịch vụ quản lý chi phí đầu tư xây dựng</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>Kinh doanh dịch vụ kiểm định xây dựng</td>
+                </tr>
+                <tr>
+                    <td>112</td>
+                    <td>Kinh doanh dịch vụ thí nghiệm chuyên ngành xây dựng</td>
+                </tr>
+                <tr>
+                    <td>113</td>
+                    <td>Kinh doanh dịch vụ quản lý vận hành nhà chung cư</td>
+                </tr>
+                <tr>
+                    <td>114</td>
+                    <td>Kinh doanh dịch vụ quản lý, vận hành cơ sở hỏa táng</td>
+                </tr>
+                <tr>
+                    <td>115</td>
+                    <td>Kinh doanh dịch vụ lập thiết kế quy hoạch xây dựng</td>
+                </tr>
+                <tr>
+                    <td>116</td>
+                    <td>Kinh doanh sản phẩm amiang trắng thuộc nhóm Serpentine</td>
+                </tr>
+                <tr>
+                    <td>117</td>
+                    <td>Kinh doanh dịch vụ bưu chính</td>
+                </tr>
+                <tr>
+                    <td>118</td>
+                    <td>Kinh doanh dịch vụ viễn thông</td>
+                </tr>
+                <tr>
+                    <td>119</td>
+                    <td>Kinh doanh dịch vụ chứng thực chữ ký số</td>
+                </tr>
+                <tr>
+                    <td>120</td>
+                    <td>Hoạt động của nhà xuất bản</td>
+                </tr>
+                <tr>
+                    <td>121</td>
+                    <td>Kinh doanh dịch vụ in, trừ in bao bì</td>
+                </tr>
+                <tr>
+                    <td>122</td>
+                    <td>Kinh doanh dịch vụ phát hành xuất bản phẩm</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Kinh doanh dịch vụ mạng xã hội</td>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td> Kinh doanh trò chơi trên mạng viễn thông, mạng Internet</td>
+                </tr>
+                <tr>
+                    <td>125</td>
+                    <td>Kinh doanh dịch vụ phát thanh, truyền hình trả tiền</td>
+                </tr>
+                <tr>
+                    <td>126</td>
+                    <td>Kinh doanh dịch vụ thiết lập trang thông tin điện tử tổng hợp</td>
+                </tr>
+                <tr>
+                    <td>127</td>
+                    <td>Dịch vụ gia công, tái chế, sửa chữa, làm mới sản phẩm công nghệ thông tin đã qua sử
+                        dụng thuộc Danh mục sản phẩm công nghệ thông tin đã qua sử dụng cấm nhập khẩu cho đối tác nước
+                        ngoài</td>
+                </tr>
+                <tr>
+                    <td>128</td>
+                    <td>Kinh doanh dịch vụ nội dung thông tin trên mạng viễn thông di động, mạng Internet
+                    </td>
+                </tr>
+                <tr>
+                    <td>129</td>
+                    <td>Kinh doanh dịch vụ đăng ký, duy trì tên miền</td>
+                </tr>
+                <tr>
+                    <td>130</td>
+                    <td>Kinh doanh dịch vụ trung tâm dữ liệu</td>
+                </tr>
+                <tr>
+                    <td>131</td>
+                    <td>Kinh doanh dịch vụ định danh và xác thực điện tử</td>
+                </tr>
+                <tr>
+                    <td>132</td>
+                    <td>Kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng</td>
+                </tr>
+                <tr>
+                    <td>133</td>
+                    <td>Kinh doanh dịch vụ phát hành báo chí nhập khẩu</td>
+                </tr>
+                <tr>
+                    <td>134</td>
+                    <td>Kinh doanh sản phẩm, dịch vụ mật mã dân sự</td>
+                </tr>
+                <tr>
+                    <td>135</td>
+                    <td>Kinh doanh các thiết bị gây nhiễu, phá sóng thông tin di động</td>
+                </tr>
+                <tr>
+                    <td>136</td>
+                    <td>Hoạt động của cơ sở giáo dục mầm non</td>
+                </tr>
+                <tr>
+                    <td>137</td>
+                    <td>Hoạt động của cơ sở giáo dục phổ thông</td>
+                </tr>
+                <tr>
+                    <td>138</td>
+                    <td>Hoạt động của cơ sở giáo dục đại học</td>
+                </tr>
+                <tr>
+                    <td>139</td>
+                    <td>Hoạt động của cơ sở giáo dục có vốn đầu tư nước ngoài, văn phòng đại diện giáo dục
+                        nước ngoài tại Việt Nam, phân hiệu cơ sở giáo dục có vốn đầu tư nước ngoài</td>
+                </tr>
+                <tr>
+                    <td>140</td>
+                    <td>Hoạt động của cơ sở giáo dục thường xuyên</td>
+                </tr>
+                <tr>
+                    <td>141</td>
+                    <td>Hoạt động của trường chuyên biệt</td>
+                </tr>
+                <tr>
+                    <td>142</td>
+                    <td>Hoạt động liên kết đào tạo với nước ngoài</td>
+                </tr>
+                <tr>
+                    <td>143</td>
+                    <td>Kiểm định chất lượng giáo dục</td>
+                </tr>
+                <tr>
+                    <td>144</td>
+                    <td>Kinh doanh dịch vụ tư vấn du học</td>
+                </tr>
+                <tr>
+                    <td>145</td>
+                    <td>Khai thác thủy sản</td>
+                </tr>
+                <tr>
+                    <td>146</td>
+                    <td>Kinh doanh thủy sản</td>
+                </tr>
+                <tr>
+                    <td>147</td>
+                    <td>Kinh doanh thức ăn thủy sản, thức ăn chăn nuôi</td>
+                </tr>
+                <tr>
+                    <td>148</td>
+                    <td>Kinh doanh dịch vụ khảo nghiệm thức ăn thủy sản, thức ăn chăn nuôi</td>
+                </tr>
+                <tr>
+                    <td>149</td>
+                    <td>Kinh doanh chế phẩm sinh học, vi sinh vật, hóa chất, chất xử lý môi trường trong
+                        nuôi trồng thủy sản, chăn nuôi</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>Kinh doanh đóng mới, cải hoán tàu cá</td>
+                </tr>
+                <tr>
+                    <td>151</td>
+                    <td>Đăng kiểm tàu cá</td>
+                </tr>
+                <tr>
+                    <td>152</td>
+                    <td>Đào tạo, bồi dưỡng thuyền viên tàu cá</td>
+                </tr>
+                <tr>
+                    <td>153</td>
+                    <td>Nuôi, trồng các loài thực vật, động vật hoang dã thuộc các Phụ lục của Công ước
+                        CITES và danh mục thực vật rừng, động vật rừng, thủy sản nguy cấp, quý, hiếm</td>
+                </tr>
+                <tr>
+                    <td>154</td>
+                    <td>Nuôi động vật rừng thông thường</td>
+                </tr>
+                <tr>
+                    <td>155</td>
+                    <td>Xuất khẩu, nhập khẩu, tái xuất khẩu, quá cảnh và nhập nội từ biển mẫu vật từ tự
+                        nhiên của các loài thuộc các Phụ lục của Công ước CITES và danh mục thực vật rừng, động vật
+                        rừng, thủy sản nguy cấp, quý, hiếm</td>
+                </tr>
+                <tr>
+                    <td>156</td>
+                    <td>Xuất khẩu, nhập khẩu, tái xuất khẩu mẫu vật nuôi sinh sản, nuôi sinh trưởng, trồng
+                        cấy nhân tạo của các loài thuộc các Phụ lục của Công ước CITES và danh mục thực vật rừng, động
+                        vật rừng, thủy sản nguy cấp, quý, hiếm</td>
+                </tr>
+                <tr>
+                    <td>157</td>
+                    <td>Chế biến, kinh doanh, vận chuyển, quảng cáo, trưng bày, cất giữ mẫu vật của các loài
+                        thực vật, động vật thuộc các Phụ lục của Công ước CITES và danh mục thực vật rừng, động vật
+                        rừng, thủy sản nguy cấp, quý, hiếm</td>
+                </tr>
+                <tr>
+                    <td>158</td>
+                    <td>Kinh doanh thuốc bảo vệ thực vật</td>
+                </tr>
+                <tr>
+                    <td>159</td>
+                    <td>Kinh doanh dịch vụ xử lý vật thể thuộc diện kiểm dịch thực vật</td>
+                </tr>
+                <tr>
+                    <td>160</td>
+                    <td>Kinh doanh dịch vụ khảo nghiệm thuốc bảo vệ thực vật</td>
+                </tr>
+                <tr>
+                    <td>161</td>
+                    <td>Kinh doanh dịch vụ bảo vệ thực vật</td>
+                </tr>
+                <tr>
+                    <td>162</td>
+                    <td>Kinh doanh thuốc thú y, vắc xin, chế phẩm sinh học, vi sinh vật, hóa chất dùng trong
+                        thú y</td>
+                </tr>
+                <tr>
+                    <td>163</td>
+                    <td>Kinh doanh dịch vụ kỹ thuật về thú y</td>
+                </tr>
+                <tr>
+                    <td>164</td>
+                    <td>Kinh doanh dịch vụ xét nghiệm, phẫu thuật động vật</td>
+                </tr>
+                <tr>
+                    <td>165</td>
+                    <td>Kinh doanh dịch vụ tiêm phòng, chẩn đoán bệnh, kê đơn, chữa bệnh, chăm sóc sức khỏe
+                        động vật</td>
+                </tr>
+                <tr>
+                    <td>166</td>
+                    <td>Kinh doanh dịch vụ kiểm nghiệm, khảo nghiệm thuốc thú y (bao gồm thuốc thú y, thuốc
+                        thú y thủy sản, vắc xin, chế phẩm sinh học, vi sinh vật, hóa chất dùng trong thú y, thú y thủy
+                        sản)</td>
+                </tr>
+                <tr>
+                    <td>167</td>
+                    <td>Kinh doanh chăn nuôi trang trại</td>
+                </tr>
+                <tr>
+                    <td>168</td>
+                    <td>Kinh doanh giết mổ gia súc, gia cầm</td>
+                </tr>
+                <tr>
+                    <td>169</td>
+                    <td>Kinh doanh thực phẩm thuộc lĩnh vực quản lý chuyên ngành của Bộ Nông nghiệp và Phát
+                        triển nông thôn</td>
+                </tr>
+                <tr>
+                    <td>170</td>
+                    <td>Kinh doanh dịch vụ cách ly kiểm dịch động vật, sản phẩm động vật</td>
+                </tr>
+                <tr>
+                    <td>171</td>
+                    <td>Kinh doanh phân bón</td>
+                </tr>
+                <tr>
+                    <td>172</td>
+                    <td>Kinh doanh dịch vụ khảo nghiệm phân bón</td>
+                </tr>
+                <tr>
+                    <td>173</td>
+                    <td>Kinh doanh giống cây trồng, giống vật nuôi</td>
+                </tr>
+                <tr>
+                    <td>174</td>
+                    <td>Kinh doanh giống thủy sản</td>
+                </tr>
+                <tr>
+                    <td>175</td>
+                    <td>Kinh doanh dịch vụ khảo nghiệm giống cây trồng, giống vật nuôi</td>
+                </tr>
+                <tr>
+                    <td>176</td>
+                    <td>Kinh doanh dịch vụ khảo nghiệm giống thủy sản</td>
+                </tr>
+                <tr>
+                    <td>177</td>
+                    <td>Kinh doanh dịch vụ thử nghiệm, khảo nghiệm chế phẩm sinh học, vi sinh vật, hóa chất,
+                        chất xử lý môi trường trong nuôi trồng thủy sản, chăn nuôi</td>
+                </tr>
+                <tr>
+                    <td>178</td>
+                    <td>Kinh doanh sản phẩm biến đổi gen</td>
+                </tr>
+                <tr>
+                    <td>179</td>
+                    <td>Kinh doanh dịch vụ khám bệnh, chữa bệnh</td>
+                </tr>
+                <tr>
+                    <td>180</td>
+                    <td>Kinh doanh dịch vụ phẫu thuật thẩm mỹ</td>
+                </tr>
+                <tr>
+                    <td>181</td>
+                    <td>Kinh doanh dược</td>
+                </tr>
+                <tr>
+                    <td>182</td>
+                    <td>Sản xuất mỹ phẩm</td>
+                </tr>
+                <tr>
+                    <td>183</td>
+                    <td>Kinh doanh hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia
+                        dụng y tế</td>
+                </tr>
+                <tr>
+                    <td>184</td>
+                    <td>Kinh doanh trang thiết bị y tế</td>
+                </tr>
+                <tr>
+                    <td>185</td>
+                    <td>Kinh doanh dịch vụ giám định về sở hữu trí tuệ (bao gồm giám định về quyền tác giả
+                        và quyền liên quan, giám định sở hữu công nghiệp và giám định về quyền đối với giống cây trồng)
+                    </td>
+                </tr>
+                <tr>
+                    <td>186</td>
+                    <td>Kinh doanh dịch vụ tiến hành công việc bức xạ</td>
+                </tr>
+                <tr>
+                    <td>187</td>
+                    <td>Kinh doanh dịch vụ hỗ trợ ứng dụng năng lượng nguyên tử</td>
+                </tr>
+                <tr>
+                    <td>188</td>
+                    <td>Kinh doanh dịch vụ đánh giá sự phù hợp</td>
+                </tr>
+                <tr>
+                    <td>189</td>
+                    <td>Kinh doanh dịch vụ kiểm định, hiệu chuẩn, thử nghiệm phương tiện đo, chuẩn đo lường
+                    </td>
+                </tr>
+                <tr>
+                    <td>190</td>
+                    <td>Kinh doanh dịch vụ đánh giá, thẩm định giá và giám định công nghệ</td>
+                </tr>
+                <tr>
+                    <td>191</td>
+                    <td>Kinh doanh dịch vụ đại diện quyền sở hữu trí tuệ (bao gồm dịch vụ đại diện sở hữu
+                        công nghiệp và dịch vụ đại diện quyền đối với giống cây trồng)</td>
+                </tr>
+                <tr>
+                    <td>192</td>
+                    <td>Kinh doanh dịch vụ phát hành và phổ biến phim</td>
+                </tr>
+                <tr>
+                    <td>193</td>
+                    <td>Kinh doanh dịch vụ giám định cổ vật</td>
+                </tr>
+                <tr>
+                    <td>194</td>
+                    <td>Kinh doanh dịch vụ lập quy hoạch dự án, tổ chức thi công, giám sát thi công dự án
+                        bảo quản, tu bổ và phục hồi di tích</td>
+                </tr>
+                <tr>
+                    <td>195</td>
+                    <td>Kinh doanh dịch vụ ka-ra-ô-kê (karaoke), vũ trường</td>
+                </tr>
+                <tr>
+                    <td>196</td>
+                    <td>Kinh doanh dịch vụ lữ hành</td>
+                </tr>
+                <tr>
+                    <td>197</td>
+                    <td>Kinh doanh hoạt động thể thao của doanh nghiệp thể thao, câu lạc bộ thể thao chuyên
+                        nghiệp</td>
+                </tr>
+                <tr>
+                    <td>198</td>
+                    <td>Kinh doanh dịch vụ biểu diễn nghệ thuật, trình diễn thời trang, tổ chức thi người
+                        đẹp, người mẫu</td>
+                </tr>
+                <tr>
+                    <td>199</td>
+                    <td>Kinh doanh bản ghi âm, ghi hình ca múa nhạc, sân khấu</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>Kinh doanh dịch vụ lưu trú</td>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>Mua bán di vật, cổ vật, bảo vật quốc gia</td>
+                </tr>
+                <tr>
+                    <td>202</td>
+                    <td>Xuất khẩu di vật, cổ vật không thuộc sở hữu nhà nước, sở hữu của tổ chức chính trị,
+                        tổ chức chính trị – xã hội; nhập khẩu hàng hóa văn hóa thuộc diện quản lý chuyên ngành của Bộ
+                        Văn hóa, Thể thao và Du lịch</td>
+                </tr>
+                <tr>
+                    <td>203</td>
+                    <td>Kinh doanh dịch vụ bảo tàng</td>
+                </tr>
+                <tr>
+                    <td>204</td>
+                    <td>Kinh doanh trò chơi điện tử (trừ kinh doanh trò chơi điện tử có thưởng dành cho
+                        người nước ngoài và kinh doanh trò chơi điện tử có thưởng trên mạng)</td>
+                </tr>
+                <tr>
+                    <td>205</td>
+                    <td>Kinh doanh dịch vụ tư vấn điều tra, đánh giá đất đai</td>
+                </tr>
+                <tr>
+                    <td>206</td>
+                    <td>Kinh doanh dịch vụ về lập quy hoạch, kế hoạch sử dụng đất</td>
+                </tr>
+                <tr>
+                    <td>207</td>
+                    <td>Kinh doanh dịch vụ xây dựng hạ tầng kỹ thuật công nghệ thông tin, xây dựng phần mềm
+                        của hệ thống thông tin đất đai</td>
+                </tr>
+                <tr>
+                    <td>208</td>
+                    <td>Kinh doanh dịch vụ xây dựng cơ sở dữ liệu đất đai</td>
+                </tr>
+                <tr>
+                    <td>209</td>
+                    <td>Kinh doanh dịch vụ xác định giá đất</td>
+                </tr>
+                <tr>
+                    <td>210</td>
+                    <td>Kinh doanh dịch vụ đo đạc và bản đồ</td>
+                </tr>
+                <tr>
+                    <td>211</td>
+                    <td>Kinh doanh dịch vụ dự báo, cảnh báo khí tượng thủy văn</td>
+                </tr>
+                <tr>
+                    <td>212</td>
+                    <td>Kinh doanh dịch vụ khoan nước dưới đất, thăm dò nước dưới đất</td>
+                </tr>
+                <tr>
+                    <td>213</td>
+                    <td>Kinh doanh dịch vụ khai thác, sử dụng tài nguyên nước, xả nước thải vào nguồn nước
+                    </td>
+                </tr>
+                <tr>
+                    <td>214</td>
+                    <td>Kinh doanh dịch vụ điều tra cơ bản, tư vấn lập quy hoạch, đề án, báo cáo tài nguyên
+                        nước</td>
+                </tr>
+                <tr>
+                    <td>215</td>
+                    <td>Kinh doanh dịch vụ thăm dò khoáng sản</td>
+                </tr>
+                <tr>
+                    <td>216</td>
+                    <td>Khai thác khoáng sản</td>
+                </tr>
+                <tr>
+                    <td>217</td>
+                    <td>Kinh doanh dịch vụ vận chuyển, xử lý chất thải nguy hại</td>
+                </tr>
+                <tr>
+                    <td>218</td>
+                    <td>Nhập khẩu phế liệu</td>
+                </tr>
+                <tr>
+                    <td>219</td>
+                    <td>Kinh doanh dịch vụ quan trắc môi trường</td>
+                </tr>
+                <tr>
+                    <td>220</td>
+                    <td>Hoạt động kinh doanh của ngân hàng thương mại</td>
+                </tr>
+                <tr>
+                    <td>221</td>
+                    <td>Hoạt động kinh doanh của tổ chức tín dụng phi ngân hàng</td>
+                </tr>
+                <tr>
+                    <td>222</td>
+                    <td>Hoạt động kinh doanh của ngân hàng hợp tác xã, quỹ tín dụng nhân dân, tổ chức tài
+                        chính vi mô</td>
+                </tr>
+                <tr>
+                    <td>223</td>
+                    <td>Cung ứng dịch vụ trung gian thanh toán, cung ứng dịch vụ thanh toán không qua tài
+                        khoản thanh toán của khách hàng</td>
+                </tr>
+                <tr>
+                    <td>224</td>
+                    <td>Cung ứng dịch vụ thông tin tín dụng</td>
+                </tr>
+                <tr>
+                    <td>225</td>
+                    <td>Hoạt động kinh doanh, cung ứng dịch vụ ngoại hối của tổ chức không phải là tổ chức
+                        tín dụng</td>
+                </tr>
+                <tr>
+                    <td>226</td>
+                    <td>Kinh doanh vàng</td>
+                </tr>
+                <tr>
+                    <td>227</td>
+                    <td>Hoạt động in, đúc tiền</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

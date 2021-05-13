@@ -1,0 +1,36 @@
+#career {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#career th, #career td {
+  border: 1px solid #4e3284;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#career th:nth-child(1), #career td:nth-child(1) {
+  text-align: center;
+  width: 8%;
+  padding: 6px 0;
+  font-weight: bold;
+}
+
+#career td:nth-child(2), #career th:nth-child(2) {
+  padding: 4px 12px;
+}
+
+#career th {
+  background-color: #ff5200;
+  color: white;
+}
+
+#career tr:nth-child(even):not(:nth-child(1)) {
+  background: #f7f7f7;
+}
+/*# sourceMappingURL=index.css.map */
